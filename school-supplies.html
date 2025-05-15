@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Supplies - Thanh Lý Sinh Viên</title>
+    <link rel="icon" type="Logo_07/png" href="Logo_07.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="school-supplies.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Logo_04.png" alt="Campus Marketplace Logo">
+                <h1>Thanh Lý Sinh Viên</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for school supplies...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="categories.html"><i class="fas fa-th-large"></i> Categories</a>
+                <a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="account.html"><i class="fas fa-user"></i> Account</a>
+                <a href="sell.html" class="btn"><i class="fas fa-plus"></i> Sell Item</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>School Supplies</h2>
+            <p>Find affordable stationery, notebooks, calculators, and other essential supplies for your studies.</p>
+        </div>
+    </section>
+    
+    <!-- Filters -->
+    <section class="container">
+        <div class="filters">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="type">Supply Type</label>
+                    <select id="type">
+                        <option value="">All Types</option>
+                        <option value="notebooks">Notebooks & Paper</option>
+                        <option value="writing">Writing Instruments</option>
+                        <option value="art">Art Supplies</option>
+                        <option value="calculators">Calculators</option>
+                        <option value="backpacks">Backpacks & Bags</option>
+                        <option value="organizers">Organizers & Planners</option>
+                        <option value="lab">Lab Equipment</option>
+                        <option value="other">Other Supplies</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="condition">Condition</label>
+                    <select id="condition">
+                        <option value="">Any Condition</option>
+                        <option value="new">New</option>
+                        <option value="like-new">Like New</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="used">Used</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-min">Price Range</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="number" id="price-min" placeholder="Min">
+                        <input type="number" id="price-max" placeholder="Max">
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="subject">Subject/Course</label>
+                    <select id="subject">
+                        <option value="">All Subjects</option>
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="art">Art & Design</option>
+                        <option value="business">Business</option>
+                        <option value="general">General Use</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn apply-btn">Apply Filters</button>
+                <button class="filter-btn reset-btn">Reset</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Supplies Grid -->
+    <section class="container">
+        <div class="supplies-grid">
+            <!-- Supply 1 -->
+            <div class="supply-card">
+                <div class="supply-image">
+                    <img src="https://images.unsplash.com/photo-1544391641-ccb5f75cc8b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Scientific Calculator">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="supply-details">
+                    <h3 class="supply-title">TI-84 Plus Graphing Calculator</h3>
+                    <div class="supply-meta">
+                        <div class="supply-price">$65.00</div>
+                        <div class="supply-condition">Like New</div>
+                    </div>
+                    <div class="supply-info">
+                        <p><span>Type:</span> Calculator</p>
+                        <p><span>Brand:</span> Texas Instruments</p>
+                        <p><span>Model:</span> TI-84 Plus</p>
+                        <p><span>Subject:</span> Mathematics/Engineering</p>
+                    </div>
+                    <div class="supply-location"><i class="fas fa-map-marker-alt"></i> Engineering Building</div>
+                    <p>Barely used TI-84 Plus calculator. Perfect for calculus, statistics, and engineering courses.</p>
+                    <div class="supply-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Michael R.</div>
+                    </div>
+                    <div class="supply-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Supply 2 -->
+            <div class="supply-card">
+                <div class="supply-image">
+                    <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1375&q=80" alt="Notebooks">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="supply-details">
+                    <h3 class="supply-title">5-Pack Spiral Notebooks</h3>
+                    <div class="supply-meta">
+                        <div class="supply-price">$12.00</div>
+                        <div class="supply-condition">New</div>
+                    </div>
+                    <div class="supply-info">
+                        <p><span>Type:</span> Notebooks</p>
+                        <p><span>Brand:</span> Five Star</p>
+                        <p><span>Pages:</span> 100 sheets each</p>
+                        <p><span>Subject:</span> General Use</p>
+                    </div>
+                    <div class="supply-location"><i class="fas fa-map-marker-alt"></i> Library</div>
+                    <p>Brand new pack of 5 college-ruled spiral notebooks. Still in original packaging.</p>
+                    <div class="supply-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Jennifer L.</div>
+                    </div>
+                    <div class="supply-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Supply 3 -->
+            <div class="supply-card">
+                <div class="supply-image">
+                    <img src="https://images.unsplash.com/photo-1544403894-9e10a211e4b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Art Supplies">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="supply-details">
+                    <h3 class="supply-title">Prismacolor Premier Colored Pencils</h3>
+                    <div class="supply-meta">
+                        <div class="supply-price">$30.00</div>
+                        <div class="supply-condition">Good</div>
+                    </div>
+                    <div class="supply-info">
+                        <p><span>Type:</span> Art Supplies</p>
+                        <p><span>Brand:</span> Prismacolor</p>
+                        <p><span>Set:</span> 48 colors</p>
+                        <p><span>Subject:</span> Art & Design</p>
+                    </div>
+                    <div class="supply-location"><i class="fas fa-map-marker-alt"></i> Arts Building</div>
+                    <p>High-quality colored pencil set. Most colors barely used, a few are about half-length.</p>
+                    <div class="supply-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Sophia K.</div>
+                    </div>
+                    <div class="supply-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Supply 4 -->
+            <div class="supply-card">
+                <div class="supply-image">
+                    <img src="https://images.unsplash.com/photo-1577460551100-907fc3d13dae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Backpack">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="supply-details">
+                    <h3 class="supply-title">North Face Backpack</h3>
+                    <div class="supply-meta">
+                        <div class="supply-price">$45.00</div>
+                        <div class="supply-condition">Good</div>
+                    </div>
+                    <div class="supply-info">
+                        <p><span>Type:</span> Backpack</p>
+                        <p><span>Brand:</span> The North Face</p>
+                        <p><span>Model:</span> Borealis</p>
+                        <p><span>Color:</span> Navy Blue</p>
+                    </div>
+                    <div class="supply-location"><i class="fas fa-map-marker-alt"></i> Student Union</div>
+                    <p>Sturdy backpack with laptop compartment and plenty of storage. Minor wear but excellent condition.</p>
+                    <div class="supply-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Daniel T.</div>
+                    </div>
+                    <div class="supply-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Supply 5 -->
+            <div class="supply-card">
+                <div class="supply-image">
+                    <img src="https://images.unsplash.com/photo-1531088009183-5ff5b7c95f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Lab Kit">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="supply-details">
+                    <h3 class="supply-title">Chemistry Lab Kit</h3>
+                    <div class="supply-meta">
+                        <div class="supply-price">$35.00</div>
+                        <div class="supply-condition">Like New</div>
+                    </div>
+                    <div class="supply-info">
+                        <p><span>Type:</span> Lab Equipment</p>
+                        <p><span>Course:</span> General Chemistry</p>
+                        <p><span>Includes:</span> Goggles, lab coat (size M), notebook</p>
+                        <p><span>Subject:</span> Science</p>
+                    </div>
+                    <div class="supply-location"><i class="fas fa-map-marker-alt"></i> Science Building</div>
+                    <p>Complete lab kit for General Chemistry I & II. Only used for one semester.</p>
+                    <div class="supply-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/78.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Emma P.</div>
+                    </div>
+                    <div class="supply-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Supply 6 -->
+            <div class="supply-card">
+                <div class="supply-image">
+                    <img src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Planner">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="supply-details">
+                    <h3 class="supply-title">Academic Planner 2023-2024</h3>
+                    <div class="supply-meta">
+                        <div class="supply-price">$15.00</div>
+                        <div class="supply-condition">New</div>
+                    </div>
+                    <div class="supply-info">
+                        <p><span>Type:</span> Organizer</p>
+                        <p><span>Brand:</span> Blue Sky</p>
+                        <p><span>Size:</span> 8.5" x 11"</p>
+                        <p><span>Features:</span> Monthly & Weekly Views</p>
+                    </div>
+                    <div class="supply-location"><i class="fas fa-map-marker-alt"></i> Business School</div>
+                    <p>Unopened academic planner with monthly tabs, goal tracking pages, and note sections.</p>
+                    <div class="supply-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Ryan M.</div>
+                    </div>
+                    <div class="supply-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Supply 7 -->
+            <div class="supply-card">
+                <div class="supply-image">
+                    <img src="https://images.unsplash.com/photo-1600431521340-491eca880813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Desk Lamp">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="supply-details">
+                    <h3 class="supply-title">LED Desk Lamp with USB Port</h3>
+                    <div class="supply-meta">
+                        <div class="supply-price">$22.00</div>
+                        <div class="supply-condition">Good</div>
+                    </div>
+                    <div class="supply-info">
+                        <p><span>Type:</span> Desk Accessory</p>
+                        <p><span>Features:</span> Adjustable brightness, USB charging port</p>
+                        <p><span>Color:</span> White</p>
+                        <p><span>Power:</span> USB or outlet</p>
+                    </div>
+                    <div class="supply-location"><i class="fas fa-map-marker-alt"></i> East Dorms</div>
+                    <p>Adjustable LED desk lamp with 5 brightness levels and color modes. Great for late-night studying.</p>
+                    <div class="supply-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Aisha J.</div>
+                    </div>
+                    <div class="supply-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Supply 8 -->
+            <div class="supply-card">
+                <div class="supply-image">
+                    <img src="https://images.unsplash.com/photo-1568205612837-017257d2310a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Whiteboard">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="supply-details">
+                    <h3 class="supply-title">Magnetic Whiteboard (24" x 36")</h3>
+                    <div class="supply-meta">
+                        <div class="supply-price">$18.00</div>
+                        <div class="supply-condition">Good</div>
+                    </div>
+                    <div class="supply-info">
+                        <p><span>Type:</span> Study Aid</p>
+                        <p><span>Size:</span> 24" x 36"</p>
+                        <p><span>Includes:</span> Mounting hardware, 4 markers, eraser</p>
+                        <p><span>Features:</span> Magnetic surface</p>
+                    </div>
+                    <div class="supply-location"><i class="fas fa-map-marker-alt"></i> North Campus</div>
+                    <p>Perfect for organizing study schedules or group projects. Includes markers and mounting hardware.</p>
+                    <div class="supply-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Carlos V.</div>
+                    </div>
+                    <div class="supply-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pagination -->
+    <section class="container">
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">Next &raquo;</a>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Have School Supplies to Sell?</h2>
+            <p>Help fellow students save money on essential supplies. List your unused or gently used items today!</p>
+            <a href="sell.html" class="hero-btn primary-btn">Sell Your Supplies</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Campus Marketplace</h3>
+                    <p>The trusted platform for university students to buy and sell used items safely and conveniently.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="textbooks.html">Textbooks</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="furniture.html">Furniture</a></li>
+                        <li><a href="clothing.html">Clothing</a></li>
+                        <li><a href="bicycles.html">Bicycles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="safety.html">Safety Tips</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Campus Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="school-supplies.js"></script>
+</body>
+</html>

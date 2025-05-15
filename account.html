@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Thanh Lý Sinh Viên</title>
+    <link rel="icon" type="Logo_07/png" href="Logo_07.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Logo_04.png" alt="Campus Marketplace Logo">
+                <h1>Thanh Lý Sinh Viên</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for items...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="categories.html"><i class="fas fa-th-large"></i> Categories</a>
+                <a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="account.html" class="active"><i class="fas fa-user"></i> Account</a>
+                <a href="sell.html" class="btn"><i class="fas fa-plus"></i> Sell Item</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Authentication Container (Login/Register) -->
+    <section class="auth-section" id="auth-container">
+        <div class="container">
+            <div class="auth-container">
+                <!-- Login Form -->
+                <div class="auth-form-container active" id="login-section">
+                    <h2 class="auth-title">Login to Your Account</h2>
+                    <p class="auth-subtitle">Welcome back! Please login to access your account.</p>
+                    
+                    <form id="login-form" class="auth-form">
+                        <div class="form-group">
+                            <label for="login-email">Email Address</label>
+                            <input type="email" id="login-email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" required>
+                        </div>
+                        
+                        <div class="form-options">
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember-me">
+                                <label for="remember-me">Remember me</label>
+                            </div>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        
+                        <button type="submit" class="auth-btn">Login</button>
+                    </form>
+                    
+                    <div class="auth-divider">
+                        <span>OR</span>
+                    </div>
+                    
+                    <div class="social-auth">
+                        <button class="social-btn google">
+                            <i class="fab fa-google"></i> Continue with Google
+                        </button>
+                        <button class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i> Continue with Facebook
+                        </button>
+                    </div>
+                    
+                    <p class="auth-switch">
+                        Don't have an account? <a href="#" id="switch-to-register">Register</a>
+                    </p>
+                </div>
+                
+                <!-- Register Form -->
+                <div class="auth-form-container" id="register-section">
+                    <h2 class="auth-title">Create an Account</h2>
+                    <p class="auth-subtitle">Join our community to buy and sell items!</p>
+                    
+                    <form id="register-form" class="auth-form">
+                        <div class="form-group">
+                            <label for="register-name">Full Name</label>
+                            <input type="text" id="register-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="register-email">Email Address</label>
+                            <input type="email" id="register-email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="register-password">Password</label>
+                            <input type="password" id="register-password" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="register-confirm-password">Confirm Password</label>
+                            <input type="password" id="register-confirm-password" required>
+                        </div>
+                        
+                        <div class="form-options">
+                            <div class="terms-agreement">
+                                <input type="checkbox" id="terms-agreement" required>
+                                <label for="terms-agreement">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="auth-btn">Register</button>
+                    </form>
+                    
+                    <div class="auth-divider">
+                        <span>OR</span>
+                    </div>
+                    
+                    <div class="social-auth">
+                        <button class="social-btn google">
+                            <i class="fab fa-google"></i> Sign up with Google
+                        </button>
+                        <button class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i> Sign up with Facebook
+                        </button>
+                    </div>
+                    
+                    <p class="auth-switch">
+                        Already have an account? <a href="#" id="switch-to-login">Login</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Account Dashboard (shown after login) -->
+    <section class="account-dashboard" id="dashboard-container" style="display: none;">
+        <div class="container">
+            <div class="dashboard-container">
+                <!-- Sidebar -->
+                <div class="dashboard-sidebar">
+                    <div class="user-profile">
+                        <div class="user-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User Avatar">
+                            <div class="edit-avatar">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                        </div>
+                        <h3 class="user-name">Nguyễn Văn A</h3>
+                        <p class="user-email">nguyenvana@gmail.com</p>
+                        <p class="user-status"><i class="fas fa-circle"></i> Active since Sep 2023</p>
+                    </div>
+                    
+                    <nav class="dashboard-nav">
+                        <ul>
+                            <li class="active" data-tab="dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</li>
+                            <li data-tab="my-listings"><i class="fas fa-list"></i> My Listings</li>
+                            <li data-tab="messages"><i class="fas fa-envelope"></i> Messages <span class="badge">3</span></li>
+                            <li data-tab="wishlist"><i class="fas fa-heart"></i> Wishlist</li>
+                            <li data-tab="transactions"><i class="fas fa-exchange-alt"></i> Transactions</li>
+                            <li data-tab="reviews"><i class="fas fa-star"></i> Reviews</li>
+                            <li data-tab="settings"><i class="fas fa-cog"></i> Settings</li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="logout-btn">
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="dashboard-content">
+                    <!-- Dashboard Tab -->
+                    <div class="tab-content active" id="dashboard">
+                        <h2 class="tab-title">Dashboard</h2>
+                        
+                        <div class="stats-container">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-list"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>5</h3>
+                                    <p>Active Listings</p>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>12</h3>
+                                    <p>Items Sold</p>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>8</h3>
+                                    <p>Wishlist Items</p>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>4.8</h3>
+                                    <p>Rating</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="recent-activity">
+                            <div class="section-header">
+                                <h3>Recent Activity</h3>
+                                <a href="#" class="view-all">View All</a>
+                            </div>
+                            
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <div class="activity-icon sold">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="activity-details">
+                                        <h4>Item Sold: Calculus Textbook</h4>
+                                        <p>You sold this item for $45.00</p>
+                                        <span class="activity-time">2 days ago</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="activity-item">
+                                    <div class="activity-icon message">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="activity-details">
+                                        <h4>New Message from Trần Thị B</h4>
+                                        <p>Regarding your "Desk Lamp" listing</p>
+                                        <span class="activity-time">3 days ago</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="activity-item">
+                                    <div class="activity-icon listing">
+                                        <i class="fas fa-list"></i>
+                                    </div>
+                                    <div class="activity-details">
+                                        <h4>New Listing: Bluetooth Speaker</h4>
+                                        <p>You listed this item for $30.00</p>
+                                        <span class="activity-time">5 days ago</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="activity-item">
+                                    <div class="activity-icon review">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="activity-details">
+                                        <h4>New Review from Lê Văn C</h4>
+                                        <p>★★★★★ "Great seller, fast response!"</p>
+                                        <span class="activity-time">1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- My Listings Tab -->
+                    <div class="tab-content" id="my-listings">
+                        <h2 class="tab-title">My Listings</h2>
+                        
+                        <div class="listings-header">
+                            <div class="listings-filter">
+                                <select id="listing-status">
+                                    <option value="all">All Listings</option>
+                                    <option value="active">Active</option>
+                                    <option value="sold">Sold</option>
+                                    <option value="expired">Expired</option>
+                                </select>
+                            </div>
+                            
+                            <a href="sell.html" class="add-listing-btn">
+                                <i class="fas fa-plus"></i> Add New Listing
+                            </a>
+                        </div>
+                        
+                        <div class="listings-grid">
+                            <!-- Listing 1 -->
+                            <div class="listing-card">
+                                <div class="listing-image">
+                                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Calculus Textbook">
+                                    <div class="listing-status active">Active</div>
+                                </div>
+                                <div class="listing-details">
+                                    <h3 class="listing-title">Calculus: Early Transcendentals</h3>
+                                    <div class="listing-meta">
+                                        <div class="listing-price">$45.00</div>
+                                        <div class="listing-date">Listed: Aug 15, 2023</div>
+                                    </div>
+                                    <div class="listing-stats">
+                                        <div class="stat"><i class="fas fa-eye"></i> 42 views</div>
+                                        <div class="stat"><i class="fas fa-heart"></i> 5 saves</div>
+                                                                                <div class="stat"><i class="fas fa-heart"></i> 5 saves</div>
+                                    </div>
+                                    <div class="listing-actions">
+                                        <button class="action-btn edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                                        <button class="action-btn delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                                        <button class="action-btn mark-sold-btn"><i class="fas fa-check"></i> Mark as Sold</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Listing 2 -->
+                            <div class="listing-card">
+                                <div class="listing-image">
+                                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bluetooth Speaker">
+                                    <div class="listing-status active">Active</div>
+                                </div>
+                                <div class="listing-details">
+                                    <h3 class="listing-title">Bluetooth Speaker</h3>
+                                    <div class="listing-meta">
+                                        <div class="listing-price">$30.00</div>
+                                        <div class="listing-date">Listed: Sep 5, 2023</div>
+                                    </div>
+                                    <div class="listing-stats">
+                                        <div class="stat"><i class="fas fa-eye"></i> 28 views</div>
+                                        <div class="stat"><i class="fas fa-heart"></i> 3 saves</div>
+                                    </div>
+                                    <div class="listing-actions">
+                                        <button class="action-btn edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                                        <button class="action-btn delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                                        <button class="action-btn mark-sold-btn"><i class="fas fa-check"></i> Mark as Sold</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Listing 3 (Sold) -->
+                            <div class="listing-card">
+                                <div class="listing-image">
+                                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Desk Lamp">
+                                    <div class="listing-status sold">Sold</div>
+                                </div>
+                                <div class="listing-details">
+                                    <h3 class="listing-title">Desk Lamp</h3>
+                                    <div class="listing-meta">
+                                        <div class="listing-price">$15.00</div>
+                                        <div class="listing-date">Sold: Aug 28, 2023</div>
+                                    </div>
+                                    <div class="listing-stats">
+                                        <div class="stat"><i class="fas fa-eye"></i> 35 views</div>
+                                        <div class="stat"><i class="fas fa-heart"></i> 2 saves</div>
+                                    </div>
+                                    <div class="listing-actions">
+                                        <button class="action-btn relist-btn"><i class="fas fa-redo"></i> Relist</button>
+                                        <button class="action-btn delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Messages Tab -->
+                    <div class="tab-content" id="messages">
+                        <h2 class="tab-title">Messages</h2>
+                        
+                        <div class="messages-container">
+                            <div class="messages-sidebar">
+                                <div class="search-messages">
+                                    <input type="text" placeholder="Search messages...">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                
+                                <div class="conversation-list">
+                                    <div class="conversation active">
+                                        <div class="conversation-avatar">
+                                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Trần Thị B">
+                                            <div class="status-dot online"></div>
+                                        </div>
+                                        <div class="conversation-info">
+                                            <h4>Trần Thị B</h4>
+                                            <p>Is the desk lamp still available?</p>
+                                        </div>
+                                        <div class="conversation-meta">
+                                            <span class="time">3d</span>
+                                            <span class="unread">2</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="conversation">
+                                        <div class="conversation-avatar">
+                                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Lê Văn C">
+                                            <div class="status-dot"></div>
+                                        </div>
+                                        <div class="conversation-info">
+                                            <h4>Lê Văn C</h4>
+                                            <p>Thanks for the quick delivery!</p>
+                                        </div>
+                                        <div class="conversation-meta">
+                                            <span class="time">1w</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="conversation">
+                                        <div class="conversation-avatar">
+                                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Phạm Thị D">
+                                            <div class="status-dot"></div>
+                                        </div>
+                                        <div class="conversation-info">
+                                            <h4>Phạm Thị D</h4>
+                                            <p>Can you do $40 for the textbook?</p>
+                                        </div>
+                                        <div class="conversation-meta">
+                                            <span class="time">2w</span>
+                                            <span class="unread">1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <div class="message-user">
+                                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Trần Thị B">
+                                        <div>
+                                            <h4>Trần Thị B</h4>
+                                            <p><i class="fas fa-circle online"></i> Online</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="message-actions">
+                                        <button><i class="fas fa-phone"></i></button>
+                                        <button><i class="fas fa-video"></i></button>
+                                        <button><i class="fas fa-ellipsis-v"></i></button>
+                                    </div>
+                                </div>
+                                
+                                <div class="message-body">
+                                    <div class="message-date">
+                                        <span>September 15, 2023</span>
+                                    </div>
+                                    
+                                    <div class="message received">
+                                        <div class="message-bubble">
+                                            <p>Hi there! I saw your listing for the desk lamp. Is it still available?</p>
+                                        </div>
+                                        <span class="message-time">10:23 AM</span>
+                                    </div>
+                                    
+                                    <div class="message sent">
+                                        <div class="message-bubble">
+                                            <p>Hello! Yes, it's still available.</p>
+                                        </div>
+                                        <span class="message-time">10:45 AM</span>
+                                    </div>
+                                    
+                                    <div class="message received">
+                                        <div class="message-bubble">
+                                            <p>Great! Does it come with a bulb? And is the price negotiable?</p>
+                                        </div>
+                                        <span class="message-time">10:47 AM</span>
+                                    </div>
+                                    
+                                    <div class="message sent">
+                                        <div class="message-bubble">
+                                            <p>Yes, it comes with an LED bulb. I'm firm on the price since it's already discounted.</p>
+                                        </div>
+                                        <span class="message-time">10:50 AM</span>
+                                    </div>
+                                    
+                                    <div class="message-date">
+                                        <span>Today</span>
+                                    </div>
+                                    
+                                    <div class="message received">
+                                        <div class="message-bubble">
+                                            <p>I'd like to buy it. When can we meet?</p>
+                                        </div>
+                                        <span class="message-time">9:15 AM</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="message-input">
+                                    <input type="text" placeholder="Type a message...">
+                                    <div class="message-input-actions">
+                                        <button><i class="fas fa-paperclip"></i></button>
+                                        <button><i class="fas fa-smile"></i></button>
+                                        <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Wishlist Tab -->
+                    <div class="tab-content" id="wishlist">
+                        <h2 class="tab-title">My Wishlist</h2>
+                        
+                        <div class="listings-grid">
+                            <!-- Wishlist Item 1 -->
+                            <div class="listing-card">
+                                <div class="listing-image">
+                                    <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Scientific Calculator">
+                                </div>
+                                <div class="listing-details">
+                                    <h3 class="listing-title">Scientific Calculator (TI-84)</h3>
+                                    <div class="listing-meta">
+                                        <div class="listing-price">$60.00</div>
+                                        <div class="listing-date">Listed by: Hoàng Văn E</div>
+                                    </div>
+                                    <div class="listing-stats">
+                                        <div class="stat"><i class="fas fa-map-marker-alt"></i> 1.2 km away</div>
+                                        <div class="stat"><i class="fas fa-clock"></i> Listed 2 days ago</div>
+                                    </div>
+                                    <div class="listing-actions">
+                                        <button class="action-btn view-btn"><i class="fas fa-eye"></i> View</button>
+                                        <button class="action-btn contact-btn"><i class="fas fa-comment"></i> Contact</button>
+                                        <button class="action-btn remove-wishlist-btn"><i class="fas fa-heart-broken"></i> Remove</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Wishlist Item 2 -->
+                            <div class="listing-card">
+                                <div class="listing-image">
+                                    <img src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Desk Chair">
+                                </div>
+                                <div class="listing-details">
+                                    <h3 class="listing-title">Ergonomic Desk Chair</h3>
+                                    <div class="listing-meta">
+                                        <div class="listing-price">$75.00</div>
+                                        <div class="listing-date">Listed by: Ngô Thị F</div>
+                                    </div>
+                                    <div class="listing-stats">
+                                        <div class="stat"><i class="fas fa-map-marker-alt"></i> 3.5 km away</div>
+                                        <div class="stat"><i class="fas fa-clock"></i> Listed 1 week ago</div>
+                                    </div>
+                                    <div class="listing-actions">
+                                        <button class="action-btn view-btn"><i class="fas fa-eye"></i> View</button>
+                                        <button class="action-btn contact-btn"><i class="fas fa-comment"></i> Contact</button>
+                                        <button class="action-btn remove-wishlist-btn"><i class="fas fa-heart-broken"></i> Remove</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Transactions Tab -->
+                    <div class="tab-content" id="transactions">
+                        <h2 class="tab-title">Transactions</h2>
+                        
+                        <div class="transactions-filter">
+                            <select id="transaction-type">
+                                <option value="all">All Transactions</option>
+                                <option value="selling">Selling</option>
+                                <option value="buying">Buying</option>
+                            </select>
+                            
+                            <select id="transaction-status">
+                                <option value="all">All Status</option>
+                                <option value="completed">Completed</option>
+                                <option value="pending">Pending</option>
+                                <option value="cancelled">Cancelled</option>
+                            </select>
+                        </div>
+                        
+                        <div class="transactions-list">
+                            <!-- Transaction 1 -->
+                            <div class="transaction-item">
+                                <div class="transaction-icon selling">
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+                                <div class="transaction-details">
+                                    <div class="transaction-info">
+                                        <h4>Calculus Textbook</h4>
+                                        <p>Sold to Phạm Thị D</p>
+                                        <span class="transaction-date">Sep 12, 2023</span>
+                                    </div>
+                                    <div class="transaction-amount">
+                                        <span class="amount">+$45.00</span>
+                                        <span class="status completed">Completed</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Transaction 2 -->
+                            <div class="transaction-item">
+                                <div class="transaction-icon buying">
+                                    <i class="fas fa-arrow-down"></i>
+                                </div>
+                                <div class="transaction-details">
+                                    <div class="transaction-info">
+                                        <h4>Physics Textbook</h4>
+                                        <p>Bought from Trần Văn G</p>
+                                        <span class="transaction-date">Sep 5, 2023</span>
+                                    </div>
+                                    <div class="transaction-amount">
+                                        <span class="amount">-$35.00</span>
+                                        <span class="status completed">Completed</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Transaction 3 -->
+                            <div class="transaction-item">
+                                <div class="transaction-icon selling">
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+                                <div class="transaction-details">
+                                    <div class="transaction-info">
+                                        <h4>Desk Lamp</h4>
+                                        <p>Sold to Trần Thị B</p>
+                                        <span class="transaction-date">Aug 28, 2023</span>
+                                    </div>
+                                    <div class="transaction-amount">
+                                        <span class="amount">+$15.00</span>
+                                        <span class="status completed">Completed</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Transaction 4 (Pending) -->
+                            <div class="transaction-item">
+                                <div class="transaction-icon selling">
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+                                <div class="transaction-details">
+                                    <div class="transaction-info">
+                                        <h4>Bluetooth Speaker</h4>
+                                        <p>Selling to Lê Văn C</p>
+                                        <span class="transaction-date">Sep 18, 2023</span>
+                                    </div>
+                                    <div class="transaction-amount">
+                                        <span class="amount">+$30.00</span>
+                                        <span class="status pending">Pending</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reviews Tab -->
+                    <div class="tab-content" id="reviews">
+                        <h2 class="tab-title">Reviews</h2>
+                        
+                        <div class="reviews-summary">
+                            <div class="rating-summary">
+                                <div class="rating-number">4.8</div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="rating-count">Based on 15 reviews</div>
+                            </div>
+                            
+                            <div class="rating-breakdown">
+                                <div class="rating-bar">
+                                    <div class="rating-label">5 stars</div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 80%;"></div>
+                                    </div>
+                                    <div class="rating-count">12</div>
+                                </div>
+                                
+                                <div class="rating-bar">
+                                    <div class="rating-label">4 stars</div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 13%;"></div>
+                                    </div>
+                                    <div class="rating-count">2</div>
+                                </div>
+                                
+                                <div class="rating-bar">
+                                    <div class="rating-label">3 stars</div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 7%;"></div>
+                                    </div>
+                                    <div class="rating-count">1</div>
+                                </div>
+                                
+                                <div class="rating-bar">
+                                    <div class="rating-label">2 stars</div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 0%;"></div>
+                                    </div>
+                                    <div class="rating-count">0</div>
+                                </div>
+                                
+                                <div class="rating-bar">
+                                    <div class="rating-label">1 star</div>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 0%;"></div>
+                                    </div>
+                                    <div class="rating-count">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="reviews-tabs">
+                            <button class="review-tab active">Reviews Received (15)</button>
+                            <button class="review-tab">Reviews Given (8)</button>
+                        </div>
+                        
+                        <div class="reviews-list">
+                            <!-- Review 1 -->
+                            <div class="review-item">
+                                <div class="review-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Lê Văn C">
+                                </div>
+                                <div class="review-content">
+                                    <div class="review-header">
+                                        <h4>Lê Văn C</h4>
+                                        <div class="review-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="review-date">1 week ago</span>
+                                    </div>
+                                    <p class="review-text">Great seller, fast response! The desk lamp was exactly as described and in perfect condition. Would definitely buy from again.</p>
+                                    <p class="review-item-info">Item: Desk Lamp</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Review 2 -->
+                            <div class="review-item">
+                                <div class="review-avatar">
+                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Phạm Thị D">
+                                </div>
+                                <div class="review-content">
+                                    <div class="review-header">
+                                        <h4>Phạm Thị D</h4>
+                                        <div class="review-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="review-date">2 days ago</span>
+                                    </div>
+                                    <p class="review-text">The textbook was in excellent condition, just as advertised. Seller was very responsive and we arranged the meetup quickly. Highly recommend!</p>
+                                    <p class="review-item-info">Item: Calculus Textbook</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Review 3 -->
+                            <div class="review-item">
+                                <div class="review-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Đỗ Văn H">
+                                </div>
+                                <div class="review-content">
+                                    <div class="review-header">
+                                        <h4>Đỗ Văn H</h4>
+                                        <div class="review-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <span class="review-date">3 weeks ago</span>
+                                    </div>
+                                    <p class="review-text">The item was okay, but had more wear and tear than I expected from the description. Seller was nice though and the price was fair.</p>
+                                    <p class="review-item-info">Item: Chemistry Textbook</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Settings Tab -->
+                    <div class="tab-content" id="settings">
+                        <h2 class="tab-title">Account Settings</h2>
+                        
+                        <form class="settings-form">
+                            <div class="settings-section">
+                                <h3 class="settings-section-title">Personal Information</h3>
+                                
+                                <div class="form-group">
+                                    <label for="settings-name">Full Name</label>
+                                    <input type="text" id="settings-name" value="Nguyễn Văn A">
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="settings-email">Email Address</label>
+                                        <input type="email" id="settings-email" value="nguyenvana@gmail.com">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="settings-phone">Phone Number</label>
+                                        <input type="tel" id="settings-phone" value="0912345678">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="settings-bio">Bio</label>
+                                    <textarea id="settings-bio" rows="4">Student at XYZ University, selling items I no longer need. Fast responses and fair prices!</textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="settings-section">
+                                <h3 class="settings-section-title">Password</h3>
+                                
+                                <div class="form-group">
+                                    <label for="settings-current-password">Current Password</label>
+                                    <input type="password" id="settings-current-password">
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="settings-new-password">New Password</label>
+                                        <input type="password" id="settings-new-password">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="settings-confirm-password">Confirm New Password</label>
+                                        <input type="password" id="settings-confirm-password">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="settings-section">
+                                <h3 class="settings-section-title">Notifications</h3>
+                                
+                                <div class="form-options">
+                                    <div class="remember-me">
+                                        <input type="checkbox" id="notify-messages" checked>
+                                        <label for="notify-messages">Email notifications for new messages</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-options">
+                                    <div class="remember-me">
+                                        <input type="checkbox" id="notify-offers" checked>
+                                        <label for="notify-offers">Email notifications for offers on your listings</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-options">
+                                    <div class="remember-me">
+                                        <input type="checkbox" id="notify-wishlist">
+                                        <label for="notify-wishlist">Email notifications for price changes on wishlist items</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="settings-btn">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="account.js"></script>
+</body>
+</html>

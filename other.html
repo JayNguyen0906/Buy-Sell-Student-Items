@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Items - Thanh Lý Sinh Viên</title>
+    <link rel="icon" type="Logo_07/png" href="Logo_07.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="other.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Logo_04.png" alt="Campus Marketplace Logo">
+                <h1>Thanh Lý Sinh Viên</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for items...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="categories.html"><i class="fas fa-th-large"></i> Categories</a>
+                <a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="account.html"><i class="fas fa-user"></i> Account</a>
+                <a href="sell.html" class="btn"><i class="fas fa-plus"></i> Sell Item</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Other Items</h2>
+            <p>Discover unique and miscellaneous items that don't fit into standard categories.</p>
+        </div>
+    </section>
+    
+    <!-- Filters -->
+    <section class="container">
+        <div class="filters">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="category">Type</label>
+                    <select id="category">
+                        <option value="">All Items</option>
+                        <option value="art">Art & Crafts</option>
+                        <option value="collectibles">Collectibles</option>
+                        <option value="instruments">Musical Instruments</option>
+                        <option value="tools">Tools & Equipment</option>
+                        <option value="kitchen">Kitchen Items</option>
+                        <option value="decor">Home Decor</option>
+                        <option value="misc">Miscellaneous</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="condition">Condition</label>
+                    <select id="condition">
+                        <option value="">Any Condition</option>
+                        <option value="new">New</option>
+                        <option value="like-new">Like New</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="for-parts">For Parts</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-min">Price Range</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="number" id="price-min" placeholder="Min">
+                        <input type="number" id="price-max" placeholder="Max">
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="location">Location</label>
+                    <select id="location">
+                        <option value="">All Locations</option>
+                        <option value="north">North Campus</option>
+                        <option value="south">South Campus</option>
+                        <option value="east">East Campus</option>
+                        <option value="west">West Campus</option>
+                        <option value="downtown">Downtown</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn apply-btn">Apply Filters</button>
+                <button class="filter-btn reset-btn">Reset</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Items Grid -->
+    <section class="container">
+        <div class="items-grid">
+            <!-- Item 1 -->
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Desk Lamp">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3 class="item-title">Modern Desk Lamp with USB Port</h3>
+                    <div class="item-meta">
+                        <div class="item-price">$22.00</div>
+                        <div class="item-condition">Like New</div>
+                    </div>
+                    <div class="item-info">
+                        <p><span>Type:</span> Home Decor</p>
+                        <p><span>Brand:</span> TaoTronics</p>
+                        <p><span>Features:</span> 3 Brightness Levels, USB Port</p>
+                        <p><span>Age:</span> 6 months</p>
+                    </div>
+                    <div class="item-location"><i class="fas fa-map-marker-alt"></i> North Campus Dorms</div>
+                    <p>Adjustable LED desk lamp with 3 brightness levels and USB charging port. Perfect for studying.</p>
+                    <div class="item-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Lily R.</div>
+                    </div>
+                    <div class="item-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Yoga Mat">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3 class="item-title">Premium Yoga Mat - Barely Used</h3>
+                    <div class="item-meta">
+                        <div class="item-price">$15.00</div>
+                        <div class="item-condition">Excellent</div>
+                    </div>
+                    <div class="item-info">
+                        <p><span>Type:</span> Fitness Equipment</p>
+                        <p><span>Brand:</span> Lululemon</p>
+                        <p><span>Thickness:</span> 6mm</p>
+                        <p><span>Includes:</span> Carrying Strap</p>
+                    </div>
+                    <div class="item-location"><i class="fas fa-map-marker-alt"></i> Recreation Center</div>
+                    <p>6mm thick yoga mat with carrying strap. Used only a few times, in excellent condition.</p>
+                    <div class="item-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Alex M.</div>
+                    </div>
+                    <div class="item-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 3 -->
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1585298723682-7115561c51b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Coffee Maker">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3 class="item-title">Single-Serve Coffee Maker</h3>
+                    <div class="item-meta">
+                        <div class="item-price">$30.00</div>
+                        <div class="item-condition">Good</div>
+                    </div>
+                    <div class="item-info">
+                        <p><span>Type:</span> Kitchen Appliance</p>
+                        <p><span>Brand:</span> Keurig</p>
+                        <p><span>Model:</span> K-Mini</p>
+                        <p><span>Includes:</span> 10 Coffee Pods</p>
+                    </div>
+                    <div class="item-location"><i class="fas fa-map-marker-alt"></i> East Campus Apartments</div>
+                    <p>Compact coffee maker, perfect for dorm rooms. Makes coffee in under 2 minutes. Includes 10 coffee pods.</p>
+                    <div class="item-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Sophia K.</div>
+                    </div>
+                    <div class="item-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 4 -->
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Acoustic Guitar">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3 class="item-title">Acoustic Guitar with Case</h3>
+                    <div class="item-meta">
+                        <div class="item-price">$85.00</div>
+                        <div class="item-condition">Good</div>
+                    </div>
+                    <div class="item-info">
+                        <p><span>Type:</span> Musical Instrument</p>
+                        <p><span>Brand:</span> Yamaha</p>
+                        <p><span>Model:</span> F310</p>
+                        <p><span>Includes:</span> Padded Case, Extra Strings</p>
+                    </div>
+                    <div class="item-location"><i class="fas fa-map-marker-alt"></i> Music Building</div>
+                    <p>Yamaha F310 acoustic guitar with padded case. Great for beginners. Some minor scratches but sounds perfect.</p>
+                    <div class="item-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/23.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Ryan P.</div>
+                    </div>
+                    <div class="item-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 5 -->
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Plant Collection">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3 class="item-title">Indoor Plant Collection (3 Plants)</h3>
+                    <div class="item-meta">
+                        <div class="item-price">$25.00</div>
+                        <div class="item-condition">Excellent</div>
+                    </div>
+                    <div class="item-info">
+                        <p><span>Type:</span> Home Decor</p>
+                        <p><span>Plants:</span> Snake Plant, Pothos, ZZ Plant</p>
+                        <p><span>Includes:</span> Decorative Pots</p>
+                        <p><span>Care Level:</span> Low Maintenance</p>
+                    </div>
+                    <div class="item-location"><i class="fas fa-map-marker-alt"></i> Botany Department</div>
+                    <p>Set of 3 low-maintenance indoor plants with decorative pots. Perfect for brightening up your dorm room.</p>
+                    <div class="item-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Jamie L.</div>
+                    </div>
+                    <div class="item-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 6 -->
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1594552072238-b8a33785b261?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Projector">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3 class="item-title">Mini Projector - Great for Movie Nights</h3>
+                    <div class="item-meta">
+                        <div class="item-price">$70.00</div>
+                        <div class="item-condition">Like New</div>
+                    </div>
+                    <div class="item-info">
+                        <p><span>Type:</span> Electronics</p>
+                        <p><span>Brand:</span> VANKYO</p>
+                        <p><span>Resolution:</span> 1080p</p>
+                        <p><span>Includes:</span> HDMI Cable, Remote</p>
+                    </div>
+                    <div class="item-location"><i class="fas fa-map-marker-alt"></i> Film Studies Department</div>
+                    <p>Compact projector perfect for movie nights or presentations. Only used for one semester.</p>
+                    <div class="item-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Daniel R.</div>
+                    </div>
+                    <div class="item-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pagination -->
+    <section class="container">
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">Next &raquo;</a>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Have Items to Sell?</h2>
+            <p>Turn your unused items into cash and help fellow students find affordable solutions for their needs.</p>
+            <a href="sell.html" class="hero-btn primary-btn">Sell Your Items</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Campus Marketplace</h3>
+                    <p>The trusted platform for university students to buy and sell used items safely and conveniently.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="textbooks.html">Textbooks</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="furniture.html">Furniture</a></li>
+                        <li><a href="clothing.html">Clothing</a></li>
+                        <li><a href="bicycles.html">Bicycles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="safety.html">Safety Tips</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Campus Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="other.js"></script>
+</body>
+</html>

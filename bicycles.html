@@ -1,0 +1,395 @@
+                    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicycles - Thanh Lý Sinh Viên</title>
+    <link rel="icon" type="Logo_07/png" href="Logo_07.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bicycles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Logo_04.png" alt="Campus Marketplace Logo">
+                <h1>Thanh Lý Sinh Viên</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for bicycles...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="categories.html"><i class="fas fa-th-large"></i> Categories</a>
+                <a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="account.html"><i class="fas fa-user"></i> Account</a>
+                <a href="sell.html" class="btn"><i class="fas fa-plus"></i> Sell Item</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Bicycles</h2>
+            <p>Find affordable bikes for commuting around campus and exploring the city.</p>
+        </div>
+    </section>
+    
+    <!-- Filters -->
+    <section class="container">
+        <div class="filters">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="type">Bicycle Type</label>
+                    <select id="type">
+                        <option value="">All Types</option>
+                        <option value="road">Road Bike</option>
+                        <option value="mountain">Mountain Bike</option>
+                        <option value="hybrid">Hybrid Bike</option>
+                        <option value="city">City Bike</option>
+                        <option value="folding">Folding Bike</option>
+                        <option value="cruiser">Cruiser</option>
+                        <option value="fixie">Fixed Gear/Single Speed</option>
+                        <option value="electric">Electric Bike</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="condition">Condition</label>
+                    <select id="condition">
+                        <option value="">Any Condition</option>
+                        <option value="new">Like New</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="needs-work">Needs Work</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-min">Price Range</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="number" id="price-min" placeholder="Min">
+                        <input type="number" id="price-max" placeholder="Max">
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="frame-size">Frame Size</label>
+                    <select id="frame-size">
+                        <option value="">All Sizes</option>
+                        <option value="xs">XS (13-14")</option>
+                        <option value="s">S (15-16")</option>
+                        <option value="m">M (17-18")</option>
+                        <option value="l">L (19-20")</option>
+                        <option value="xl">XL (21-22")</option>
+                        <option value="xxl">XXL (23"+)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn apply-btn">Apply Filters</button>
+                <button class="filter-btn reset-btn">Reset</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Bicycle Grid -->
+    <section class="container">
+        <div class="bicycle-grid">
+            <!-- Bicycle 1 -->
+            <div class="bicycle-card">
+                <div class="bicycle-image">
+                    <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Road Bike">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="bicycle-details">
+                    <h3 class="bicycle-title">Trek Road Bike</h3>
+                    <div class="bicycle-meta">
+                        <div class="bicycle-price">$250.00</div>
+                        <div class="bicycle-condition">Good</div>
+                    </div>
+                    <div class="bicycle-info">
+                        <p><span>Type:</span> Road Bike</p>
+                        <p><span>Brand:</span> Trek</p>
+                        <p><span>Frame Size:</span> M (17")</p>
+                        <p><span>Gears:</span> 21-Speed</p>
+                    </div>
+                    <div class="bicycle-location"><i class="fas fa-map-marker-alt"></i> Recreation Center</div>
+                    <p>Great commuter bike, recently tuned up with new brake pads and chain.</p>
+                    <div class="bicycle-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Alex M.</div>
+                    </div>
+                    <div class="bicycle-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bicycle 2 -->
+            <div class="bicycle-card">
+                <div class="bicycle-image">
+                    <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1422&q=80" alt="Mountain Bike">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="bicycle-details">
+                    <h3 class="bicycle-title">Specialized Mountain Bike</h3>
+                    <div class="bicycle-meta">
+                        <div class="bicycle-price">$320.00</div>
+                        <div class="bicycle-condition">Excellent</div>
+                    </div>
+                    <div class="bicycle-info">
+                        <p><span>Type:</span> Mountain Bike</p>
+                        <p><span>Brand:</span> Specialized</p>
+                        <p><span>Frame Size:</span> L (19")</p>
+                        <p><span>Gears:</span> 24-Speed</p>
+                    </div>
+                    <div class="bicycle-location"><i class="fas fa-map-marker-alt"></i> West Campus</div>
+                    <p>Hardtail mountain bike in excellent condition. Front suspension, disc brakes.</p>
+                    <div class="bicycle-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Jessica T.</div>
+                    </div>
+                    <div class="bicycle-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bicycle 3 -->
+            <div class="bicycle-card">
+                <div class="bicycle-image">
+                    <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Fixie Bike">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="bicycle-details">
+                    <h3 class="bicycle-title">State Bicycle Fixie</h3>
+                    <div class="bicycle-meta">
+                        <div class="bicycle-price">$180.00</div>
+                        <div class="bicycle-condition">Good</div>
+                    </div>
+                    <div class="bicycle-info">
+                        <p><span>Type:</span> Fixed Gear</p>
+                        <p><span>Brand:</span> State Bicycle Co.</p>
+                        <p><span>Frame Size:</span> M (17")</p>
+                        <p><span>Color:</span> Matte Black</p>
+                    </div>
+                    <div class="bicycle-location"><i class="fas fa-map-marker-alt"></i> Arts Building</div>
+                    <p>Lightweight single-speed bike, perfect for flat campus terrain. Includes lock.</p>
+                    <div class="bicycle-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Ryan L.</div>
+                    </div>
+                    <div class="bicycle-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bicycle 4 -->
+            <div class="bicycle-card">
+                <div class="bicycle-image">
+                    <img src="https://images.unsplash.com/photo-1583467875263-d50dec37a88c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Folding Bike">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="bicycle-details">
+                    <h3 class="bicycle-title">Brompton Folding Bike</h3>
+                    <div class="bicycle-meta">
+                        <div class="bicycle-price">$400.00</div>
+                        <div class="bicycle-condition">Like New</div>
+                    </div>
+                    <div class="bicycle-info">
+                        <p><span>Type:</span> Folding Bike</p>
+                        <p><span>Brand:</span> Brompton</p>
+                        <p><span>Gears:</span> 6-Speed</p>
+                        <p><span>Color:</span> Blue</p>
+                    </div>
+                    <div class="bicycle-location"><i class="fas fa-map-marker-alt"></i> Student Union</div>
+                    <p>Premium folding bike, barely used. Perfect for storing in dorm rooms or apartments.</p>
+                    <div class="bicycle-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Sophia M.</div>
+                    </div>
+                    <div class="bicycle-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bicycle 5 -->
+            <div class="bicycle-card">
+                <div class="bicycle-image">
+                    <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Hybrid Bike">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="bicycle-details">
+                    <h3 class="bicycle-title">Giant Hybrid Bike</h3>
+                    <div class="bicycle-meta">
+                        <div class="bicycle-price">$280.00</div>
+                        <div class="bicycle-condition">Good</div>
+                    </div>
+                    <div class="bicycle-info">
+                        <p><span>Type:</span> Hybrid Bike</p>
+                        <p><span>Brand:</span> Giant</p>
+                        <p><span>Frame Size:</span> L (19")</p>
+                        <p><span>Gears:</span> 18-Speed</p>
+                    </div>
+                    <div class="bicycle-location"><i class="fas fa-map-marker-alt"></i> Engineering Building</div>
+                    <p>Versatile hybrid bike, good for both campus and trails. Includes rear rack and fenders.</p>
+                    <div class="bicycle-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">David K.</div>
+                    </div>
+                    <div class="bicycle-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bicycle 6 -->
+            <div class="bicycle-card">
+                <div class="bicycle-image">
+                    <img src="https://images.unsplash.com/photo-1593764592116-bfb2a97c642a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Electric Bike">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="bicycle-details">
+                    <h3 class="bicycle-title">Rad Power Electric Bike</h3>
+                    <div class="bicycle-meta">
+                        <div class="bicycle-price">$850.00</div>
+                        <div class="bicycle-condition">Excellent</div>
+                    </div>
+                    <div class="bicycle-info">
+                        <p><span>Type:</span> Electric Bike</p>
+                        <p><span>Brand:</span> Rad Power</p>
+                        <p><span>Range:</span> ~45 miles per charge</p>
+                        <p><span>Frame Size:</span> M (17")</p>
+                    </div>
+                    <div class="bicycle-location"><i class="fas fa-map-marker-alt"></i> North Campus</div>
+                    <p>Electric bike in great condition. Perfect for longer commutes or hilly areas.</p>
+                    <div class="bicycle-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Emma R.</div>
+                    </div>
+                    <div class="bicycle-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pagination -->
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">Next &raquo;</a>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Have a Bicycle to Sell?</h2>
+            <p>List your bicycle on Campus Marketplace and connect with students looking for affordable transportation options.</p>
+            <a href="sell.html" class="cta-btn primary-btn">Sell Your Bicycle</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Campus Marketplace</h3>
+                    <p>The trusted platform for university students to buy and sell used items safely and conveniently.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="textbooks.html">Textbooks</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="furniture.html">Furniture</a></li>
+                        <li><a href="clothing.html">Clothing</a></li>
+                        <li><a href="bicycles.html">Bicycles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="safety.html">Safety Tips</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Campus Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="bicycles.js"></script>
+</body>
+</html>

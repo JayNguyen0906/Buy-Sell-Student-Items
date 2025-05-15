@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Item - Thanh Lý Sinh Viên</title>
+    <link rel="icon" type="Logo_07/png" href="Logo_07.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sell.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Logo_04.png" alt="Campus Marketplace Logo">
+                <h1>Thanh Lý Sinh Viên</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for items...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="categories.html"><i class="fas fa-th-large"></i> Categories</a>
+                <a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="account.html"><i class="fas fa-user"></i> Account</a>
+                <a href="sell.html" class="btn"><i class="fas fa-plus"></i> Sell Item</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h2>Sell Your Item</h2>
+            <p>List your items for free and connect with students who need what you have</p>
+        </div>
+    </section>
+    
+    <!-- Sell Form Section -->
+    <section class="sell-form-section">
+        <div class="container">
+            <div class="sell-form-container">
+                <div class="form-title">
+                    <h3>Create Your Listing</h3>
+                    <p>Fill out the details below to list your item for sale</p>
+                </div>
+                
+                <form id="sell-item-form">
+                    <!-- Basic Information -->
+                    <div class="section-heading">Basic Information</div>
+                    
+                    <div class="form-group">
+                        <label for="item-title">Item Title *</label>
+                        <input type="text" id="item-title" class="form-control" placeholder="e.g., Calculus Textbook 10th Edition" required>
+                        <div class="form-hint">Be specific and include key details like brand, model, or edition</div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="item-category">Category *</label>
+                            <select id="item-category" class="form-control" required>
+                                <option value="" disabled selected>Select a category</option>
+                                <option value="textbooks">Textbooks</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="furniture">Furniture</option>
+                                <option value="clothing">Clothing</option>
+                                <option value="bicycles">Bicycles</option>
+                                <option value="school-supplies">School Supplies</option>
+                                <option value="gaming">Gaming</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="item-condition">Condition *</label>
+                            <select id="item-condition" class="form-control" required>
+                                <option value="" disabled selected>Select condition</option>
+                                <option value="new">New (never used)</option>
+                                <option value="like-new">Like New (used few times)</option>
+                                <option value="very-good">Very Good (minimal wear)</option>
+                                <option value="good">Good (normal wear)</option>
+                                <option value="acceptable">Acceptable (noticeable wear)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="item-description">Description *</label>
+                        <textarea id="item-description" class="form-control" placeholder="Describe your item in detail. Include information about features, defects, reason for selling, etc." required></textarea>
+                        <div class="form-hint">The more details you provide, the more likely your item will sell</div>
+                    </div>
+                    
+                    <!-- Price Information -->
+                    <div class="form-divider"></div>
+                    <div class="section-heading">Price Information</div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="item-price">Price (VND) *</label>
+                            <input type="number" id="item-price" class="form-control" placeholder="e.g., 500000" min="0" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="price-negotiable">Price Negotiability</label>
+                            <select id="price-negotiable" class="form-control">
+                                <option value="fixed">Fixed Price</option>
+                                <option value="negotiable" selected>Negotiable</option>
+                                <option value="or-best-offer">Or Best Offer</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="trade-option">
+                        <label for="trade-option">I'm open to trades or exchanges</label>
+                    </div>
+                    
+                    <!-- Photos -->
+                    <div class="form-divider"></div>
+                    <div class="section-heading">Photos</div>
+                    
+                    <div class="form-group">
+                        <label>Upload Photos (up to 5) *</label>
+                        <input type="file" id="photo-upload" accept="image/*" multiple style="display: none;">
+                        <div class="photo-upload-area" onclick="document.getElementById('photo-upload').click()">
+                            <div class="photo-upload-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <div class="photo-upload-text">
+                                <h4>Drag & drop photos or click to browse</h4>
+                                <p>Add up to 5 photos. First photo will be the cover (max 5MB each)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="photo-preview" id="photo-preview">
+                            <!-- Preview images will be added here via JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <!-- Location & Contact -->
+                    <div class="form-divider"></div>
+                    <div class="section-heading">Location & Contact</div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="meeting-location">Preferred Meeting Location *</label>
+                            <input type="text" id="meeting-location" class="form-control" placeholder="e.g., University Library, Student Union" required>
+                            <div class="form-hint">Choose a safe, public location on or near campus</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-preference">Contact Preference</label>
+                            <select id="contact-preference" class="form-control">
+                                <option value="app-message">In-App Messages Only</option>
+                                <option value="email">Email</option>
+                                <option value="phone">Phone</option>
+                                <option value="any">Any Method</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Terms & Conditions -->
+                    <div class="form-divider"></div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms-agree" required>
+                        <label for="terms-agree">I agree to the <a href="terms.html" target="_blank">Terms of Service</a> and <a href="privacy.html" target="_blank">Privacy Policy</a> *</label>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="guidelines-agree" required>
+                        <label for="guidelines-agree">I confirm that my item complies with the <a href="guidelines.html" target="_blank">Community Guidelines</a> *</label>
+                    </div>
+                    
+                    <!-- Selling Tips -->
+                    <div class="selling-tips">
+                        <h4><i class="fas fa-lightbulb"></i> Tips for Successful Selling</h4>
+                        <ul>
+                            <li>Use clear, well-lit photos from multiple angles</li>
+                            <li>Be honest about the condition and any defects</li>
+                            <li>Respond quickly to inquiries from potential buyers</li>
+                            <li>Meet in public places and accept secure payment methods</li>
+                            <li>Consider researching similar items to price competitively</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Form Actions -->
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline">Save as Draft</button>
+                        <button type="submit" class="btn btn-primary">Publish Listing</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Campus Marketplace</h3>
+                    <p>The trusted platform for university students to buy and sell used items safely and conveniently.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="category.html?cat=textbooks">Textbooks</a></li>
+                        <li><a href="category.html?cat=electronics">Electronics</a></li>
+                        <li><a href="category.html?cat=furniture">Furniture</a></li>
+                        <li><a href="category.html?cat=clothing">Clothing</a></li>
+                        <li><a href="category.html?cat=bicycles">Bicycles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="safety.html">Safety Tips</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Campus Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="sell.js"></script>
+</body>
+</html>

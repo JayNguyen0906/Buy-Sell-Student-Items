@@ -1,0 +1,650 @@
+                    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbooks - Thanh Lý Sinh Viên</title>
+    <link rel="icon" type="Logo_07/png" href="Logo_07.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="textbooks.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Logo_04.png" alt="Campus Marketplace Logo">
+                <h1>Thanh Lý Sinh Viên</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for textbooks...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="categories.html"><i class="fas fa-th-large"></i> Categories</a>
+                <a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="account.html"><i class="fas fa-user"></i> Account</a>
+                <a href="sell.html" class="btn"><i class="fas fa-plus"></i> Sell Item</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Textbooks</h2>
+            <p>Find affordable textbooks from fellow students. Save money on your course materials!</p>
+        </div>
+    </section>
+    
+    <!-- Filters -->
+    <section class="container">
+        <div class="filters">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject">
+                        <option value="">All Subjects</option>
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="business">Business</option>
+                        <option value="arts">Arts & Humanities</option>
+                        <option value="computer">Computer Science</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="law">Law</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="condition">Condition</label>
+                    <select id="condition">
+                        <option value="">Any Condition</option>
+                        <option value="new">New</option>
+                        <option value="like-new">Like New</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-min">Price Range</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="number" id="price-min" placeholder="Min">
+                        <input type="number" id="price-max" placeholder="Max">
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="location">Location</label>
+                    <select id="location">
+                        <option value="">Any Location</option>
+                        <option value="north">North Campus</option>
+                        <option value="south">South Campus</option>
+                        <option value="east">East Campus</option>
+                        <option value="west">West Campus</option>
+                        <option value="downtown">Downtown</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn apply-btn">Apply Filters</button>
+                <button class="filter-btn reset-btn">Reset</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Textbooks Grid -->
+    <section class="container">
+        <div class="textbooks-grid">
+            <!-- Textbook 1 -->
+            <div class="textbook-card">
+                <div class="textbook-image">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Calculus Textbook">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="textbook-details">
+                    <h3 class="textbook-title">Calculus: Early Transcendentals</h3>
+                    <div class="textbook-meta">
+                        <div class="textbook-price">$45.00</div>
+                        <div class="textbook-condition">Like New</div>
+                    </div>
+                    <div class="textbook-info">
+                        <p><span>Author:</span> James Stewart</p>
+                        <p><span>Edition:</span> 8th Edition</p>
+                        <p><span>ISBN:</span> 978-1285741550</p>
+                        <p><span>Course:</span> MATH 101</p>
+                    </div>
+                    <div class="textbook-location"><i class="fas fa-map-marker-alt"></i> Engineering Building</div>
+                    <p>Excellent condition, barely used. All pages intact with no highlights.</p>
+                    <div class="textbook-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Sarah J.</div>
+                    </div>
+                    <div class="textbook-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Textbook 2 -->
+            <div class="textbook-card">
+                <div class="textbook-image">
+                    <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Physics Textbook">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="textbook-details">
+                    <h3 class="textbook-title">University Physics with Modern Physics</h3>
+                    <div class="textbook-meta">
+                        <div class="textbook-price">$55.00</div>
+                        <div class="textbook-condition">Good</div>
+                    </div>
+                    <div class="textbook-info">
+                        <p><span>Author:</span> Hugh D. Young, Roger A. Freedman</p>
+                        <p><span>Edition:</span> 14th Edition</p>
+                        <p><span>ISBN:</span> 978-0321973610</p>
+                        <p><span>Course:</span> PHYS 201</p>
+                    </div>
+                    <div class="textbook-location"><i class="fas fa-map-marker-alt"></i> Science Building</div>
+                    <p>Some highlighting and notes, but all pages intact. No damage to spine.</p>
+                    <div class="textbook-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Alex M.</div>
+                    </div>
+                    <div class="textbook-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Textbook 3 -->
+            <div class="textbook-card">
+                <div class="textbook-image">
+                    <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80" alt="Economics Textbook">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="textbook-details">
+                    <h3 class="textbook-title">Principles of Economics</h3>
+                    <div class="textbook-meta">
+                        <div class="textbook-price">$40.00</div>
+                        <div class="textbook-condition">Good</div>
+                    </div>
+                    <div class="textbook-info">
+                        <p><span>Author:</span> N. Gregory Mankiw</p>
+                        <p><span>Edition:</span> 8th Edition</p>
+                        <p><span>ISBN:</span> 978-1305585126</p>
+                        <p><span>Course:</span> ECON 101</p>
+                    </div>
+                    <div class="textbook-location"><i class="fas fa-map-marker-alt"></i> Business School</div>
+                    <p>Some wear on cover, minimal highlighting. Includes study guide.</p>
+                    <div class="textbook-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Lisa K.</div>
+                    </div>
+                    <div class="textbook-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Textbook 4 -->
+            <div class="textbook-card">
+                <div class="textbook-image">
+                    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Biology Textbook">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="textbook-details">
+                    <h3 class="textbook-title">Campbell Biology</h3>
+                    <div class="textbook-meta">
+                        <div class="textbook-price">$60.00</div>
+                        <div class="textbook-condition">Like New</div>
+                    </div>
+                    <div class="textbook-info">
+                        <p><span>Author:</span> Lisa A. Urry, Michael L. Cain</p>
+                        <p><span>Edition:</span> 11th Edition</p>
+                        <p><span>ISBN:</span> 978-0134093413</p>
+                        <p><span>Course:</span> BIO 110</p>
+                    </div>
+                    <div class="textbook-location"><i class="fas fa-map-marker-alt"></i> Life Sciences Building</div>
+                    <p>Practically new, used for one semester only. No markings.</p>
+                    <div class="textbook-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Ryan P.</div>
+                    </div>
+                    <div class="textbook-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Textbook 5 -->
+            <div class="textbook-card">
+                <div class="textbook-image">
+                    <img src="https://images.unsplash.com/photo-1550399105-c4db5fb85c18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Computer Science Textbook">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="textbook-details">
+                    <h3 class="textbook-title">Introduction to Algorithms</h3>
+                    <div class="textbook-meta">
+                        <div class="textbook-price">$50.00</div>
+                        <div class="textbook-condition">Good</div>
+                    </div>
+                    <div class="textbook-info">
+                        <p><span>Author:</span> Thomas H. Cormen, et al.</p>
+                        <p><span>Edition:</span> 3rd Edition</p>
+                        <p><span>ISBN:</span> 978-0262033848</p>
+                        <p><span>Course:</span> CS 301</p>
+                    </div>
+                    <div class="textbook-location"><i class="fas fa-map-marker-alt"></i> Computer Science Building</div>
+                    <p>Some dog-eared pages, but otherwise in good condition. No writing inside.</p>
+                    <div class="textbook-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Jennifer T.</div>
+                    </div>
+                    <div class="textbook-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Textbook 6 -->
+            <div class="textbook-card">
+                <div class="textbook-image">
+                    <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Psychology Textbook">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="textbook-details">
+                    <h3 class="textbook-title">Psychology: An Introduction</h3>
+                    <div class="textbook-meta">
+                        <div class="textbook-price">$35.00</div>
+                        <div class="textbook-condition">Fair</div>
+                    </div>
+                    <div class="textbook-info">
+                        <p><span>Author:</span> Benjamin Lahey</p>
+                        <p><span>Edition:</span> 13th Edition</p>
+                        <p><span>ISBN:</span> 978-0078035215</p>
+                        <p><span>Course:</span> PSY 101</p>
+                    </div>
+                    <div class="textbook-location"><i class="fas fa-map-marker-alt"></i> Psychology Building</div>
+                    <p>Some highlighting in first few chapters, otherwise good condition.</p>
+                    <div class="textbook-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Daniel R.</div>
+                    </div>
+                    <div class="textbook-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Textbook 7 (New) -->
+            <div class="textbook-card">
+                <div class="textbook-image">
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Literature Textbook">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="textbook-details">
+                    <h3 class="textbook-title">The Norton Anthology of English Literature</h3>
+                    <div class="textbook-meta">
+                        <div class="textbook-price">$38.00</div>
+                        <div class="textbook-condition">Good</div>
+                    </div>
+                    <div class="textbook-info">
+                        <p><span>Author:</span> Stephen Greenblatt (Editor)</p>
+                        <p><span>Edition:</span> 10th Edition</p>
+                        <p><span>ISBN:</span> 978-0393603026</p>
+                        <p><span>Course:</span> ENG 210</p>
+                    </div>
+                    <div class="textbook-location"><i class="fas fa-map-marker-alt"></i> Humanities Building</div>
+                    <p>Some notes in margins, but clean and well-maintained. Both volumes included.</p>
+                    <div class="textbook-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Emma L.</div>
+                    </div>
+                    <div class="textbook-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Textbook 8 (New) -->
+            <div class="textbook-card">
+                <div class="textbook-image">
+                    <img src="https://images.unsplash.com/photo-1576334682266-316a1f308dea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Chemistry Textbook">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="textbook-details">
+                    <h3 class="textbook-title">Chemistry: The Central Science</h3>
+                    <div class="textbook-meta">
+                        <div class="textbook-price">$52.00</div>
+                        <div class="textbook-condition">Like New</div>
+                    </div>
+                    <div class="textbook-info">
+                        <p><span>Author:</span> Theodore E. Brown, et al.</p>
+                        <p><span>Edition:</span> 14th Edition</p>
+                        <p><span>ISBN:</span> 978-0134414232</p>
+                        <p><span>Course:</span> CHEM 101</p>
+                    </div>
+                    <div class="textbook-location"><i class="fas fa-map-marker-alt"></i> Chemistry Building</div>
+                    <p>Barely used, includes online access code (unused). No highlighting or notes.</p>
+                    <div class="textbook-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Michael H.</div>
+                    </div>
+                    <div class="textbook-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Textbook 9 (New) -->
+            <div class="textbook-card">
+                <div class="textbook-image">
+                    <img src="https://images.unsplash.com/photo-1629652487043-fb2825838f8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Statistics Textbook">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="textbook-details">
+                    <h3 class="textbook-title">Statistics for Business and Economics</h3>
+                    <div class="textbook-meta">
+                        <div class="textbook-price">$48.00</div>
+                        <div class="textbook-condition">Good</div>
+                    </div>
+                    <div class="textbook-info">
+                        <p><span>Author:</span> Paul Newbold, William Carlson</p>
+                        <p><span>Edition:</span> 9th Edition</p>
+                        <p><span>ISBN:</span> 978-0134506593</p>
+                        <p><span>Course:</span> STAT 201</p>
+                    </div>
+                    <div class="textbook-location"><i class="fas fa-map-marker-alt"></i> Business School</div>
+                    <p>Some highlighting in early chapters. Solutions manual included as bonus.</p>
+                    <div class="textbook-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Sophia W.</div>
+                    </div>
+                    <div class="textbook-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Textbook 10 (New) -->
+            <div class="textbook-card">
+                <div class="textbook-image">
+                    <img src="https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="History Textbook">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="textbook-details">
+                    <h3 class="textbook-title">A People's History of the United States</h3>
+                    <div class="textbook-meta">
+                        <div class="textbook-price">$30.00</div>
+                        <div class="textbook-condition">Good</div>
+                    </div>
+                    <div class="textbook-info">
+                        <p><span>Author:</span> Howard Zinn</p>
+                        <p><span>Edition:</span> Revised Edition</p>
+                        <p><span>ISBN:</span> 978-0062397348</p>
+                        <p><span>Course:</span> HIST 202</p>
+                    </div>
+                    <div class="textbook-location"><i class="fas fa-map-marker-alt"></i> History Department</div>
+                    <p>Some underlining and margin notes. Cover slightly worn but binding intact.</p>
+                    <div class="textbook-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">James B.</div>
+                    </div>
+                    <div class="textbook-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Textbook 11 (New) -->
+            <div class="textbook-card">
+                <div class="textbook-image">
+                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Marketing Textbook">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="textbook-details">
+                    <h3 class="textbook-title">Marketing Management</h3>
+                    <div class="textbook-meta">
+                        <div class="textbook-price">$42.00</div>
+                        <div class="textbook-condition">Like New</div>
+                    </div>
+                    <div class="textbook-info">
+                        <p><span>Author:</span> Philip Kotler, Kevin Keller</p>
+                        <p><span>Edition:</span> 15th Edition</p>
+                        <p><span>ISBN:</span> 978-0133856460</p>
+                        <p><span>Course:</span> MKT 301</p>
+                    </div>
+                    <div class="textbook-location"><i class="fas fa-map-marker-alt"></i> Business School</div>
+                    <p>Excellent condition, used for one semester. No markings or highlights.</p>
+                    <div class="textbook-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Olivia C.</div>
+                    </div>
+                    <div class="textbook-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Textbook 12 (New) -->
+            <div class="textbook-card">
+                <div class="textbook-image">
+                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sociology Textbook">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="textbook-details">
+                    <h3 class="textbook-title">Sociology: A Brief Introduction</h3>
+                    <div class="textbook-meta">
+                        <div class="textbook-price">$32.00</div>
+                        <div class="textbook-condition">Fair</div>
+                    </div>
+                    <div class="textbook-info">
+                        <p><span>Author:</span> Richard T. Schaefer</p>
+                        <p><span>Edition:</span> 13th Edition</p>
+                        <p><span>ISBN:</span> 978-1259425585</p>
+                        <p><span>Course:</span> SOC 101</p>
+                    </div>
+                    <div class="textbook-location"><i class="fas fa-map-marker-alt"></i> Social Sciences Building</div>
+                    <p>Moderate highlighting throughout. Some water damage on last few pages.</p>
+                    <div class="textbook-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Noah S.</div>
+                    </div>
+                    <div class="textbook-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pagination -->
+    <section class="container">
+        <div class="pagination">
+            <a href="#" class="page-link active">1</a>
+            <a href="#" class="page-link">2</a>
+            <a href="#" class="page-link">3</a>
+            <a href="#" class="page-link">4</a>
+            <a href="#" class="page-link">5</a>
+            <a href="#" class="page-link next">Next <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </section>
+    
+    <!-- Selling Tips -->
+    <section class="selling-tips">
+        <div class="container">
+            <h2>Tips for Selling Textbooks</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Take Clear Photos</h3>
+                    <p>Include multiple angles showing the cover, spine, and any wear or damage. Good photos increase buyer trust.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3>Price Fairly</h3>
+                    <p>Research market prices and consider the condition. A fair price helps your book sell faster.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h3>Be Honest</h3>
+                    <p>Clearly describe any highlighting, notes, or damage. Honesty builds trust and prevents returns.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Respond Quickly</h3>
+                    <p>Reply to inquiries promptly. Fast communication increases your chances of making a sale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get Notified About New Textbooks</h2>
+                <p>Sign up to receive alerts when new textbooks in your courses become available.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Campus Marketplace</h3>
+                    <p>The trusted platform for university students to buy and sell used items safely and conveniently.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="textbooks.html">Textbooks</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="furniture.html">Furniture</a></li>
+                        <li><a href="clothing.html">Clothing</a></li>
+                        <li><a href="bicycles.html">Bicycles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="safety.html">Safety Tips</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Campus Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="textbooks.js"></script>
+</body>
+</html>

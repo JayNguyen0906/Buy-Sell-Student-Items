@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist - Thanh Lý Sinh Viên</title>
+    <link rel="icon" type="Logo_07/png" href="Logo_07.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wishlist.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Logo_04.png" alt="Campus Marketplace Logo">
+                <h1>Thanh Lý Sinh Viên</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for items...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="categories.html"><i class="fas fa-th-large"></i> Categories</a>
+                <a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="account.html"><i class="fas fa-user"></i> Account</a>
+                <a href="sell.html" class="btn"><i class="fas fa-plus"></i> Sell Item</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h2>My Wishlist</h2>
+            <p>Items you've saved for later</p>
+        </div>
+    </section>
+    
+    <!-- Wishlist Section -->
+    <section class="wishlist-section">
+        <div class="container">
+            <!-- Wishlist Controls - This will be hidden when wishlist is empty -->
+            <div class="wishlist-controls">
+                <div class="wishlist-count">You have <span>4</span> items in your wishlist</div>
+                <div class="wishlist-actions-bulk">
+                    <button class="clear-btn"><i class="fas fa-trash"></i> Clear All</button>
+                    <button class="add-all-btn"><i class="fas fa-shopping-cart"></i> Add All to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Wishlist Items Grid -->
+            <div class="wishlist-grid">
+                <div class="wishlist-item">
+                    <div class="wishlist-actions">
+                        <button class="remove-btn" title="Remove from wishlist"><i class="fas fa-times"></i></button>
+                        <button class="cart-btn" title="Add to cart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Calculus Textbook">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Calculus: Early Transcendentals</h3>
+                        <div class="item-price">$45.00</div>
+                        <div class="item-location"><i class="fas fa-map-marker-alt"></i> Engineering Building</div>
+                        <p>Excellent condition, barely used. All pages intact with no highlights.</p>
+                        <div class="item-seller">
+                            <div class="seller-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Seller Avatar">
+                            </div>
+                            <div class="seller-name">Sarah J.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wishlist-item">
+                    <div class="wishlist-actions">
+                        <button class="remove-btn" title="Remove from wishlist"><i class="fas fa-times"></i></button>
+                        <button class="cart-btn" title="Add to cart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Laptop">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Dell XPS 13 Laptop (2020)</h3>
+                        <div class="item-price">$650.00</div>
+                        <div class="item-location"><i class="fas fa-map-marker-alt"></i> Student Union</div>
+                        <p>i7, 16GB RAM, 512GB SSD. Great condition, battery still holds charge well.</p>
+                        <div class="item-seller">
+                            <div class="seller-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Seller Avatar">
+                            </div>
+                            <div class="seller-name">Mike T.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wishlist-item">
+                    <div class="wishlist-actions">
+                        <button class="remove-btn" title="Remove from wishlist"><i class="fas fa-times"></i></button>
+                        <button class="cart-btn" title="Add to cart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sofa">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Compact Sofa - Perfect for Dorms</h3>
+                        <div class="item-price">$120.00</div>
+                        <div class="item-location"><i class="fas fa-map-marker-alt"></i> West Campus Apartments</div>
+                        <p>Comfortable 2-seater sofa, gray fabric. Moving out and need to sell quickly.</p>
+                        <div class="item-seller">
+                            <div class="seller-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Seller Avatar">
+                            </div>
+                            <div class="seller-name">Emma L.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wishlist-item">
+                    <div class="wishlist-actions">
+                        <button class="remove-btn" title="Remove from wishlist"><i class="fas fa-times"></i></button>
+                        <button class="cart-btn" title="Add to cart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1605170439002-90845e45c0f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Bicycle">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Trek Mountain Bike</h3>
+                        <div class="item-price">$210.00</div>
+                        <div class="item-location"><i class="fas fa-map-marker-alt"></i> Recreation Center</div>
+                        <p>Great for getting around campus. Recently serviced with new brakes and tires.</p>
+                        <div class="item-seller">
+                            <div class="seller-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Seller Avatar">
+                            </div>
+                            <div class="seller-name">Jason K.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Empty Wishlist State (This would be shown when wishlist is empty) -->
+            <!-- Uncomment this section and comment out the wishlist-controls and wishlist-grid to show empty state
+            <div class="wishlist-empty">
+                <i class="far fa-heart"></i>
+                <h3>Your wishlist is empty</h3>
+                <p>Items you save will appear here. Start browsing to add items to your wishlist.</p>
+                <a href="index.html" class="btn">Browse Items</a>
+            </div>
+            -->
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Campus Marketplace</h3>
+                    <p>The trusted platform for university students to buy and sell used items safely and conveniently.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="category.html?cat=textbooks">Textbooks</a></li>
+                        <li><a href="category.html?cat=electronics">Electronics</a></li>
+                        <li><a href="category.html?cat=furniture">Furniture</a></li>
+                        <li><a href="category.html?cat=clothing">Clothing</a></li>
+                        <li><a href="category.html?cat=bicycles">Bicycles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="safety.html">Safety Tips</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Campus Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="wishlist.js"></script>
+</body>
+</html>

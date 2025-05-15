@@ -1,0 +1,422 @@
+                            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duyệt các mục</title>
+    <link rel="icon" type="Logo_07/png" href="Logo_07.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="browse.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Logo_04.png" alt="Campus Marketplace Logo">
+                <h1>Thanh lý sinh viên</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for items...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="browse.html" class="active"><i class="fas fa-th-large"></i> Categories</a>
+                <a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="account.html"><i class="fas fa-user"></i> Account</a>
+                <a href="sell.html" class="btn"><i class="fas fa-plus"></i> Sell Item</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Browse Items</h2>
+            <p>Find great deals on textbooks, electronics, furniture, and more</p>
+        </div>
+    </section>
+    
+    <!-- Browse Section -->
+    <section class="browse-section">
+        <div class="container">
+            <div class="browse-container">
+                <!-- Sidebar with Filters -->
+                <div class="sidebar">
+                    <div class="filter-card">
+                        <div class="filter-title">
+                            <h3>Filters</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="category-filter">Category</label>
+                            <select id="category-filter">
+                                <option value="">All Categories</option>
+                                <option value="textbooks">Textbooks</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="furniture">Furniture</option>
+                                <option value="clothing">Clothing</option>
+                                <option value="bicycles">Bicycles</option>
+                                <option value="school-supplies">School Supplies</option>
+                                <option value="gaming">Gaming</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="condition-filter">Condition</label>
+                            <select id="condition-filter">
+                                <option value="">Any Condition</option>
+                                <option value="new">New</option>
+                                <option value="like-new">Like New</option>
+                                <option value="very-good">Very Good</option>
+                                <option value="good">Good</option>
+                                <option value="acceptable">Acceptable</option>
+                                <option value="for-parts">For Parts/Not Working</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label>Price Range</label>
+                            <div class="price-range">
+                                <input type="number" placeholder="Min" min="0">
+                                <span>to</span>
+                                <input type="number" placeholder="Max" min="0">
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label>Location</label>
+                            <input type="text" placeholder="e.g., Library, Dorm">
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label>Other Options</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="negotiable">
+                                    <label for="negotiable">Price Negotiable</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="photos-only">
+                                    <label for="photos-only">With Photos Only</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="recent">
+                                    <label for="recent">Listed in Last 24 Hours</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-buttons">
+                            <button class="filter-btn apply-btn">Apply Filters</button>
+                            <button class="filter-btn reset-btn">Reset</button>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-card">
+                        <div class="filter-title">
+                            <h3>Saved Searches</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        
+                        <div class="saved-searches">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="radio" name="saved-search" id="search1">
+                                    <label for="search1">Calculus Textbooks</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" name="saved-search" id="search2">
+                                    <label for="search2">Dorm Furniture</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="radio" name="saved-search" id="search3">
+                                    <label for="search3">Laptops under $500</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="main-content">
+                    <div class="browse-header">
+                        <div class="results-count">
+                            <span>245 items found</span>
+                        </div>
+                        
+                        <div class="sort-options">
+                            <label for="sort-by">Sort by:</label>
+                            <select id="sort-by">
+                                <option value="newest">Newest First</option>
+                                <option value="oldest">Oldest First</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="popular">Most Popular</option>
+                            </select>
+                        </div>
+                        
+                        <div class="view-options">
+                            <button class="view-btn active" id="grid-view">
+                                <i class="fas fa-th-large"></i>
+                            </button>
+                            <button class="view-btn" id="list-view">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="items-grid">
+                        <!-- Item Card 1 -->
+                        <div class="item-card">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Calculus Textbook">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-title">Calculus: Early Transcendentals</h3>
+                                <div class="item-price">$45.00</div>
+                                <div class="item-meta">
+                                    <div class="item-location">
+                                        <i class="fas fa-map-marker-alt"></i> Engineering Building
+                                    </div>
+                                    <div class="item-date">
+                                        <i class="far fa-clock"></i> 2 days ago
+                                    </div>
+                                </div>
+                                <p class="item-description">Excellent condition, barely used. All pages intact with no highlights. 8th edition, perfect for Calculus I and II.</p>
+                                <div class="item-seller">
+                                    <div class="seller-avatar">
+                                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Seller Avatar">
+                                    </div>
+                                    <div class="seller-name">Sarah J.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Item Card 2 -->
+                        <div class="item-card">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Laptop">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-title">Dell XPS 13 Laptop</h3>
+                                <div class="item-price">$650.00</div>
+                                <div class="item-meta">
+                                    <div class="item-location">
+                                        <i class="fas fa-map-marker-alt"></i> Student Union
+                                    </div>
+                                    <div class="item-date">
+                                        <i class="far fa-clock"></i> 1 day ago
+                                    </div>
+                                </div>
+                                <p class="item-description">2020 model, Intel i5, 8GB RAM, 256GB SSD. Minor scratches on the bottom, but works perfectly. Includes charger and laptop sleeve.</p>
+                                <div class="item-seller">
+                                    <div class="seller-avatar">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Seller Avatar">
+                                    </div>
+                                    <div class="seller-name">Michael T.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Item Card 3 -->
+                        <div class="item-card">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sofa">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-title">Compact Sofa</h3>
+                                <div class="item-price">$120.00</div>
+                                <div class="item-meta">
+                                    <div class="item-location">
+                                        <i class="fas fa-map-marker-alt"></i> Off-Campus Housing
+                                    </div>
+                                    <div class="item-date">
+                                        <i class="far fa-clock"></i> 3 days ago
+                                    </div>
+                                </div>
+                                <p class="item-description">Comfortable 2-seater sofa, perfect for small apartments. Grey fabric, easy to clean. Must pick up by end of month.</p>
+                                <div class="item-seller">
+                                    <div class="seller-avatar">
+                                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Seller Avatar">
+                                    </div>
+                                    <div class="seller-name">Jessica L.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Item Card 4 -->
+                        <div class="item-card">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1422&q=80" alt="Mountain Bike">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-title">Trek Mountain Bike</h3>
+                                <div class="item-price">$280.00</div>
+                                <div class="item-meta">
+                                    <div class="item-location">
+                                        <i class="fas fa-map-marker-alt"></i> Recreation Center
+                                    </div>
+                                    <div class="item-date">
+                                        <i class="far fa-clock"></i> 5 days ago
+                                    </div>
+                                </div>
+                                <p class="item-description">Trek 3500 mountain bike, 21-speed. Recently tuned up with new brake pads. Great for campus commuting or trail riding.</p>
+                                <div class="item-seller">
+                                    <div class="seller-avatar">
+                                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Seller Avatar">
+                                    </div>
+                                    <div class="seller-name">Alex R.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Item Card 5 -->
+                        <div class="item-card">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Desk Lamp">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-title">Adjustable Desk Lamp</h3>
+                                <div class="item-price">$25.00</div>
+                                <div class="item-meta">
+                                    <div class="item-location">
+                                        <i class="fas fa-map-marker-alt"></i> West Campus
+                                    </div>
+                                    <div class="item-date">
+                                        <i class="far fa-clock"></i> 1 week ago
+                                    </div>
+                                </div>
+                                <p class="item-description">LED desk lamp with adjustable brightness and color temperature. USB charging port included. Perfect for studying.</p>
+                                <div class="item-seller">
+                                    <div class="seller-avatar">
+                                        <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Seller Avatar">
+                                    </div>
+                                    <div class="seller-name">Emily W.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Item Card 6 -->
+                        <div class="item-card">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Nike Shoes">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-title">Nike Running Shoes</h3>
+                                <div class="item-price">$60.00</div>
+                                <div class="item-meta">
+                                    <div class="item-location">
+                                        <i class="fas fa-map-marker-alt"></i> Gym
+                                    </div>
+                                    <div class="item-date">
+                                        <i class="far fa-clock"></i> 3 days ago
+                                    </div>
+                                </div>
+                                <p class="item-description">Nike Air Zoom Pegasus, men's size 10. Worn only a few times, almost like new. Great for running or everyday use.</p>
+                                <div class="item-seller">
+                                    <div class="seller-avatar">
+                                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Seller Avatar">
+                                    </div>
+                                    <div class="seller-name">David K.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="pagination-item active">1</a>
+                        <a href="#" class="pagination-item">2</a>
+                        <a href="#" class="pagination-item">3</a>
+                        <a href="#" class="pagination-item">4</a>
+                        <a href="#" class="pagination-item">5</a>
+                        <a href="#" class="pagination-item"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Campus Marketplace</h3>
+                    <p>The trusted platform for university students to buy and sell used items safely and conveniently.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Textbooks</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Clothing</a></li>
+                        <li><a href="bicycles.html">Bicycles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Safety Tips</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Campus Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/browse.js"></script>
+</body>
+</html>

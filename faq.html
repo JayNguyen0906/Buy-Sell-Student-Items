@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Thanh Lý Sinh Viên</title>
+    <link rel="icon" type="Logo_07/png" href="Logo_07.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Logo_04.png" alt="Campus Marketplace Logo">
+                <h1>Thanh Lý Sinh Viên</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for items...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="categories.html"><i class="fas fa-th-large"></i> Categories</a>
+                <a href="wishlist.html"><i class="fas fa-heart"></i> Favorites</a>
+                <a href="account.html"><i class="fas fa-user"></i> Account</a>
+                <a href="sell.html" class="btn"><i class="fas fa-plus"></i> Sell Item</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to common questions about using our marketplace</p>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container faq-container">
+            <!-- FAQ Search -->
+            <div class="faq-search">
+                <input type="text" id="faqSearch" placeholder="Search for questions...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <!-- FAQ Categories -->
+            <div class="faq-categories">
+                <button class="category-btn active" data-category="all">All Questions</button>
+                <button class="category-btn" data-category="account">Account</button>
+                <button class="category-btn" data-category="buying">Buying</button>
+                <button class="category-btn" data-category="selling">Selling</button>
+                <button class="category-btn" data-category="safety">Safety</button>
+                <button class="category-btn" data-category="payment">Payment</button>
+            </div>
+            
+            <!-- FAQ Items -->
+            <div class="faq-list">
+                <!-- Account Questions -->
+                <div class="faq-item" data-category="account">
+                    <div class="faq-question">
+                        <span>How do I create an account?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Creating an account is simple:</p>
+                        <p>1. Click on the "Account" button in the top navigation bar</p>
+                        <p>2. Select "Sign Up" and enter your university email address</p>
+                        <p>3. Fill in your personal details and create a password</p>
+                        <p>4. Verify your email address by clicking the link sent to your inbox</p>
+                        <p>5. Complete your profile by adding a profile picture and additional information</p>
+                        <p>Note: You must use your university email address to register, as this helps us maintain a trusted community of students.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="account">
+                    <div class="faq-question">
+                        <span>How do I reset my password?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If you've forgotten your password, follow these steps:</p>
+                        <p>1. Click on the "Account" button in the navigation bar</p>
+                        <p>2. Select "Log In" and then click "Forgot Password"</p>
+                        <p>3. Enter your university email address</p>
+                        <p>4. Check your email for a password reset link</p>
+                        <p>5. Click the link and follow the instructions to create a new password</p>
+                        <p>If you don't receive the email within a few minutes, check your spam folder or <a href="contact.html">contact our support team</a>.</p>
+                    </div>
+                </div>
+                
+                <!-- Buying Questions -->
+                <div class="faq-item" data-category="buying">
+                    <div class="faq-question">
+                        <span>How do I contact a seller?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To contact a seller about an item:</p>
+                        <p>1. Navigate to the item listing you're interested in</p>
+                        <p>2. Click the "Contact Seller" button on the listing</p>
+                        <p>3. This will open our secure messaging system where you can ask questions or arrange a meeting</p>
+                        <p>All communication should happen through our platform for safety and to maintain a record of your conversation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="buying">
+                    <div class="faq-question">
+                        <span>Can I negotiate the price?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, price negotiation is common on our platform. When contacting a seller, you can politely offer a different price than what's listed.</p>
+                        <p>Tips for successful negotiation:</p>
+                        <p>- Be respectful and reasonable with your offers</p>
+                        <p>- Explain why you're offering a different price</p>
+                        <p>- Be prepared for the seller to counter-offer or decline</p>
+                        <p>- Once you agree on a price, stick to it when you meet in person</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="buying">
+                    <div class="faq-question">
+                        <span>Where should I meet the seller?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For your safety, we recommend meeting in public places on campus during daylight hours:</p>
+                        <p>- The student union building</p>
+                        <p>- Campus libraries</p>
+                        <p>- Busy cafeterias or coffee shops</p>
+                        <p>- Residence hall lobbies</p>
+                        <p>Many campuses also have designated "safe exchange zones" that may be monitored by security cameras. Never meet at private residences or isolated locations, especially for first-time meetings.</p>
+                        <p>See our <a href="safety.html">Safety Tips</a> page for more information.</p>
+                    </div>
+                </div>
+                
+                <!-- Selling Questions -->
+                <div class="faq-item" data-category="selling">
+                    <div class="faq-question">
+                        <span>How do I list an item for sale?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To create a listing:</p>
+                        <p>1. Click the "Sell Item" button in the navigation bar</p>
+                        <p>2. Upload clear photos of your item (at least 2-3 images from different angles)</p>
+                        <p>3. Create a descriptive title</p>
+                        <p>4. Select the appropriate category</p>
+                        <p>5. Write a detailed description including condition, age, and any defects</p>
+                        <p>6. Set your price</p>
+                        <p>7. Specify your preferred meeting location on campus</p>
+                        <p>8. Review and publish your listing</p>
+                        <p>The more details and better photos you provide, the more likely your item will sell quickly!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="selling">
+                    <div class="faq-question">
+                        <span>What items are prohibited from being sold?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The following items are prohibited on our platform:</p>
+                        <p>- Illegal items or substances</p>
+                        <p>- Alcohol, tobacco, or vaping products</p>
+                        <p>- Prescription medications</p>
+                        <p>- Weapons or weapon accessories</p>
+                        <p>- Counterfeit or replica items</p>
+                        <p>- Adult content or services</p>
+                        <p>- Pets or animals</p>
+                        <p>- Food items (unless commercially packaged and unopened)</p>
+                        <p>- Items that violate university policies</p>
+                        <p>Listings that violate these rules will be removed, and repeated violations may result in account suspension. See our <a href="terms.html">Terms of Service</a> for complete details.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="selling">
+                    <div class="faq-question">
+                        <span>How do I price my items?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pricing your items appropriately will help them sell faster. Here are some tips:</p>
+                        <p>- Research similar items on our platform to see the going rate</p>
+                        <p>- For textbooks, check what percentage of the original price others are asking (typically 40-60% for good condition books)</p>
+                        <p>- Consider the item's age, condition, and original price</p>
+                        <p>- Factor in any accessories or extras you're including</p>
+                        <p>- Price slightly higher than your minimum acceptable price to allow room for negotiation</p>
+                        <p>- Be realistic - items with very high prices relative to their value tend to remain unsold</p>
+                    </div>
+                </div>
+                
+                <!-- Safety Questions -->
+                <div class="faq-item" data-category="safety">
+                    <div class="faq-question">
+                        <span>How can I stay safe when buying or selling?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Your safety is our top priority. Follow these guidelines:</p>
+                        <p>- Keep all communication within our platform</p>
+                        <p>- Meet in public, well-lit areas on campus during daylight hours</p>
+                        <p>- Bring a friend to exchanges when possible</p>
+                        <p>- Inspect items thoroughly before purchasing</p>
+                        <p>- Use cash for transactions to avoid payment scams</p>
+                        <p>- Trust your instincts - if something feels wrong, walk away</p>
+                        <p>- Report suspicious users or activities to our team</p>
+                        <p>- Never share personal financial information</p>
+                        <p>For more detailed safety information, visit our <a href="safety.html">Safety Tips</a> page.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="safety">
+                    <div class="faq-question">
+                        <span>What should I do if I encounter a problem with another user?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If you experience issues with another user:</p>
+                        <p>1. Try to resolve the issue directly through our messaging system first</p>
+                        <p>2. If that doesn't work, use the "Report User" function on their profile</p>
+                        <p>3. For serious concerns, contact our support team with details of the situation</p>
+                        <p>4. In case of safety emergencies, contact campus security or local police</p>
+                        <p>We take user reports seriously and investigate all complaints. Depending on the situation, we may mediate disputes, issue warnings, or suspend accounts that violate our community guidelines.</p>
+                    </div>
+                </div>
+                
+                <!-- Payment Questions -->
+                <div class="faq-item" data-category="payment">
+                    <div class="faq-question">
+                        <span>What payment methods should I use?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend the following payment methods for in-person transactions:</p>
+                        <p>- Cash is the most secure and immediate method</p>
+                        <p>- Person-to-person payment apps (like Venmo, Cash App, or Zelle) are acceptable if both parties agree</p>
+                        <p>- University payment systems if available on your campus</p>
+                        <p>Avoid:</p>
+                        <p>- Wire transfers</p>
+                        <p>- Money orders or cashier's checks</p>
+                        <p>- Payment requests from unknown apps</p>
+                        <p>- Shipping items and accepting online payments</p>
+                        <p>Remember to complete the payment only after inspecting the item in person.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="payment">
+                    <div class="faq-question">
+                        <span>Does the platform charge any fees?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, our platform is completely free for university students to use. There are:</p>
+                        <p>- No listing fees</p>
+                        <p>- No transaction fees</p>
+                        <p>- No membership fees</p>
+                        <p>We believe in providing a free service to help students save money and reduce waste. All transactions are conducted directly between buyers and sellers, with no platform involvement in the payment process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h3>Still Have Questions?</h3>
+            <p>If you couldn't find the answer you were looking for, our support team is here to help.</p>
+            <a href="contact.html" class="contact-btn">Contact Support</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Campus Marketplace</h3>
+                    <p>The trusted platform for university students to buy and sell used items safely and conveniently.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="textbooks.html">Textbooks</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="furniture.html">Furniture</a></li>
+                        <li><a href="clothing.html">Clothing</a></li>
+                        <li><a href="bicycles.html">Bicycles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="safety.html">Safety Tips</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Campus Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="faq.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Lý Sinh Viên - Buy & Sell Student Items</title>
+    <link rel="icon" type="image/png" href="Logo_07.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Logo_04.png" alt="Campus Marketplace Logo">
+                <h1>Thanh Lý Sinh Viên</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for items...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="categories.html"><i class="fas fa-th-large"></i> Categories</a>
+                <a href="wishlist.html"><i class="fas fa-heart"></i> Favorites</a>
+                <a href="account.html"><i class="fas fa-user"></i> Account</a>
+                <a href="sell.html" class="btn"><i class="fas fa-plus"></i> Sell Item</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Buy & Sell Student Items with Ease</h2>
+            <p>The trusted marketplace for university students to buy and sell textbooks, electronics, furniture, and more at affordable prices.</p>
+            <div class="hero-buttons">
+                <a href="sell.html" class="hero-btn primary-btn">Browse Items</a>
+                <a href="sell.html" class="hero-btn secondary-btn">Sell Your Items</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Browse Categories</h2>
+                <p>Find exactly what you need from our wide range of categories</p>
+            </div>
+            
+            <div class="category-grid">
+                <a href="textbooks.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="category-name">Textbooks</div>
+                </a>
+                
+                <a href="electronics.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="category-name">Electronics</div>
+                </a>
+                
+                <a href="furniture.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <div class="category-name">Furniture</div>
+                </a>
+                
+                <a href="clothing.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="category-name">Clothing</div>
+                </a>
+                
+                <a href="bicycles.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-bicycle"></i>
+                    </div>
+                    <div class="category-name">Bicycles</div>
+                </a>
+                
+                <a href="school-supplies.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="category-name">School Supplies</div>
+                </a>
+                
+                <a href="gaming.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="category-name">Gaming</div>
+                </a>
+                
+                <a href="other.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="category-name">Other</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Items -->
+    <section class="featured-items">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Items</h2>
+                <p>Check out these popular items from fellow students</p>
+            </div>
+            
+            <div class="items-grid">
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Calculus Textbook">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Calculus: Early Transcendentals</h3>
+                        <div class="item-price">$45.00</div>
+                        <div class="item-location"><i class="fas fa-map-marker-alt"></i> Engineering Building</div>
+                        <p>Excellent condition, barely used. All pages intact with no highlights.</p>
+                        <div class="item-seller">
+                            <div class="seller-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Seller Avatar">
+                            </div>
+                            <div class="seller-name">Sarah J.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Laptop">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Dell XPS 13 Laptop (2020)</h3>
+                        <div class="item-price">$650.00</div>
+                        <div class="item-location"><i class="fas fa-map-marker-alt"></i> Student Union</div>
+                        <p>i7, 16GB RAM, 512GB SSD. Great condition, battery still holds charge well.</p>
+                        <div class="item-seller">
+                            <div class="seller-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Seller Avatar">
+                            </div>
+                            <div class="seller-name">Mike T.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sofa">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Compact Sofa - Perfect for Dorms</h3>
+                        <div class="item-price">$120.00</div>
+                        <div class="item-location"><i class="fas fa-map-marker-alt"></i> West Campus Apartments</div>
+                        <p>Comfortable 2-seater sofa, gray fabric. Moving out and need to sell quickly.</p>
+                        <div class="item-seller">
+                            <div class="seller-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Seller Avatar">
+                            </div>
+                            <div class="seller-name">Emma L.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1593764592116-bfb2a97c642a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Bicycle">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-title">Trek Mountain Bike</h3>
+                        <div class="item-price">$210.00</div>
+                        <div class="item-location"><i class="fas fa-map-marker-alt"></i> Recreation Center</div>
+                        <p>Great for getting around campus. Recently serviced with new brakes and tires.</p>
+                        <div class="item-seller">
+                            <div class="seller-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Seller Avatar">
+                            </div>
+                            <div class="seller-name">Jason K.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p>Buying and selling on Campus Marketplace is simple and secure</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3 class="step-title">Create an Account</h3>
+                    <p class="step-description">Sign up with your university email to join our trusted community of students.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="step-title">List Your Items</h3>
+                    <p class="step-description">Take photos, set a price, and create a listing in just a few minutes.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="step-title">Connect & Chat</h3>
+                    <p class="step-description">Message other students securely through our platform to arrange details.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="step-title">Meet & Exchange</h3>
+                    <p class="step-description">Meet on campus to complete the transaction safely and conveniently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Students Say</h2>
+                <p>Hear from fellow students who have used Campus Marketplace</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I furnished my entire apartment for less than $300 using Campus Marketplace. The local pickup made everything so convenient!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Testimonial Author">
+                        </div>
+                        <div class="author-details">
+                            <h4>Jessica Wang</h4>
+                            <p>Sophomore, Business</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Sold all my textbooks at the end of the semester and made back almost half of what I paid. Way better than the bookstore buyback!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Testimonial Author">
+                        </div>
+                        <div class="author-details">
+                            <h4>David Chen</h4>
+                            <p>Senior, Computer Science</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"As an international student, this platform helped me find affordable essentials when I first arrived. The community is so helpful!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Testimonial Author">
+                        </div>
+                        <div class="author-details">
+                            <h4>Sophia Martinez</h4>
+                            <p>Junior, Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Buy or Sell?</h2>
+            <p>Join thousands of students at your university who are already saving money and reducing waste through Campus Marketplace.</p>
+            <a href="account.html" class="hero-btn primary-btn">Get Started Now</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Campus Marketplace</h3>
+                    <p>The trusted platform for university students to buy and sell used items safely and conveniently.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="textbooks.html">Textbooks</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="furniture.html">Furniture</a></li>
+                        <li><a href="clothing.html">Clothing</a></li>
+                        <li><a href="bicycles.html">Bicycles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="safety.html">Safety Tips</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Campus Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

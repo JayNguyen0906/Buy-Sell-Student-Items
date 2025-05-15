@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Items - Thanh Lý Sinh Viên</title>
+    <link rel="icon" type="Logo_07/png" href="Logo_07.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gaming.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Logo_04.png" alt="Campus Marketplace Logo">
+                <h1>Thanh Lý Sinh Viên</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for gaming items...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="categories.html"><i class="fas fa-th-large"></i> Categories</a>
+                <a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="account.html"><i class="fas fa-user"></i> Account</a>
+                <a href="sell.html" class="btn"><i class="fas fa-plus"></i> Sell Item</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Gaming Items</h2>
+            <p>Find affordable consoles, games, accessories, and gaming gear from fellow students.</p>
+        </div>
+    </section>
+    
+    <!-- Filters -->
+    <section class="container">
+        <div class="filters">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="type">Item Type</label>
+                    <select id="type">
+                        <option value="">All Types</option>
+                        <option value="consoles">Consoles</option>
+                        <option value="games">Games</option>
+                        <option value="controllers">Controllers</option>
+                        <option value="headsets">Headsets</option>
+                        <option value="pc-components">PC Components</option>
+                        <option value="accessories">Accessories</option>
+                        <option value="vr">VR Equipment</option>
+                        <option value="other">Other Gaming Items</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="platform">Platform</label>
+                    <select id="platform">
+                        <option value="">All Platforms</option>
+                        <option value="playstation">PlayStation</option>
+                        <option value="xbox">Xbox</option>
+                        <option value="nintendo">Nintendo</option>
+                        <option value="pc">PC</option>
+                        <option value="mobile">Mobile</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="condition">Condition</label>
+                    <select id="condition">
+                        <option value="">Any Condition</option>
+                        <option value="new">New</option>
+                        <option value="like-new">Like New</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="used">Used</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-min">Price Range</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="number" id="price-min" placeholder="Min">
+                        <input type="number" id="price-max" placeholder="Max">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn apply-btn">Apply Filters</button>
+                <button class="filter-btn reset-btn">Reset</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gaming Grid -->
+    <section class="container">
+        <div class="gaming-grid">
+            <!-- Gaming Item 1 -->
+            <div class="gaming-card">
+                <div class="special-badge">Popular</div>
+                <div class="gaming-image">
+                    <img src="https://images.unsplash.com/photo-1605901309584-818e25960a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1619&q=80" alt="PlayStation 5">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gaming-details">
+                    <h3 class="gaming-title">PlayStation 5 Digital Edition</h3>
+                    <div class="gaming-meta">
+                        <div class="gaming-price">$380.00</div>
+                        <div class="gaming-condition">Like New</div>
+                    </div>
+                    <div class="gaming-info">
+                        <p><span>Type:</span> Console</p>
+                        <p><span>Platform:</span> PlayStation</p>
+                        <p><span>Storage:</span> 825GB SSD</p>
+                        <p><span>Includes:</span> Controller, HDMI cable, power cord</p>
+                    </div>
+                    <div class="gaming-location"><i class="fas fa-map-marker-alt"></i> West Campus Apartments</div>
+                    <p>Barely used PS5 Digital Edition. No scratches or issues. Selling because I need to focus on studies.</p>
+                    <div class="gaming-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Alex M.</div>
+                    </div>
+                    <div class="gaming-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gaming Item 2 -->
+            <div class="gaming-card">
+                <div class="gaming-image">
+                    <img src="https://images.unsplash.com/photo-1616104435808-5b183f5b0a7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Nintendo Switch">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gaming-details">
+                    <h3 class="gaming-title">Nintendo Switch with Games Bundle</h3>
+                    <div class="gaming-meta">
+                        <div class="gaming-price">$250.00</div>
+                        <div class="gaming-condition">Good</div>
+                    </div>
+                    <div class="gaming-info">
+                        <p><span>Type:</span> Console + Games</p>
+                        <p><span>Platform:</span> Nintendo</p>
+                        <p><span>Model:</span> Original Switch (not OLED)</p>
+                        <p><span>Includes:</span> 3 games, dock, all cables</p>
+                    </div>
+                    <div class="gaming-location"><i class="fas fa-map-marker-alt"></i> Student Union</div>
+                    <p>Nintendo Switch with Zelda: BOTW, Mario Kart 8, and Animal Crossing. Minor wear on joycons but works perfectly.</p>
+                    <div class="gaming-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Mia K.</div>
+                    </div>
+                    <div class="gaming-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gaming Item 3 -->
+            <div class="gaming-card">
+                <div class="special-badge">Sale</div>
+                <div class="gaming-image">
+                    <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80" alt="Gaming PC">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gaming-details">
+                    <h3 class="gaming-title">Custom Gaming PC - RTX 3060</h3>
+                    <div class="gaming-meta">
+                        <div class="gaming-price">$750.00</div>
+                        <div class="gaming-condition">Excellent</div>
+                    </div>
+                    <div class="gaming-info">
+                        <p><span>Type:</span> PC</p>
+                        <p><span>CPU:</span> Ryzen 5 5600X</p>
+                        <p><span>GPU:</span> NVIDIA RTX 3060</p>
+                        <p><span>RAM:</span> 16GB DDR4 3200MHz</p>
+                    </div>
+                    <div class="gaming-location"><i class="fas fa-map-marker-alt"></i> Engineering Building</div>
+                    <p>Custom built gaming PC. Runs all modern games at high settings. SSD boot drive + 1TB HDD for storage.</p>
+                    <div class="gaming-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Tyler J.</div>
+                    </div>
+                    <div class="gaming-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gaming Item 4 -->
+            <div class="gaming-card">
+                <div class="gaming-image">
+                    <img src="https://images.unsplash.com/photo-1600861194942-f883de0dfe96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Gaming Headset">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gaming-details">
+                    <h3 class="gaming-title">HyperX Cloud II Gaming Headset</h3>
+                    <div class="gaming-meta">
+                        <div class="gaming-price">$55.00</div>
+                        <div class="gaming-condition">Good</div>
+                    </div>
+                    <div class="gaming-info">
+                        <p><span>Type:</span> Headset</p>
+                        <p><span>Connectivity:</span> Wired USB</p>
+                        <p><span>Features:</span> 7.1 Surround Sound, Noise Cancelling Mic</p>
+                        <p><span>Color:</span> Black/Red</p>
+                    </div>
+                    <div class="gaming-location"><i class="fas fa-map-marker-alt"></i> Library</div>
+                    <p>Comfortable gaming headset with great sound quality. Includes original box and all accessories.</p>
+                    <div class="gaming-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Sophia R.</div>
+                    </div>
+                    <div class="gaming-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gaming Item 5 -->
+            <div class="gaming-card">
+                <div class="gaming-image">
+                    <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Xbox Controller">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gaming-details">
+                    <h3 class="gaming-title">Xbox Series X Controller - Elite</h3>
+                    <div class="gaming-meta">
+                        <div class="gaming-price">$85.00</div>
+                        <div class="gaming-condition">Like New</div>
+                    </div>
+                    <div class="gaming-info">
+                        <p><span>Type:</span> Controller</p>
+                        <p><span>Platform:</span> Xbox</p>
+                        <p><span>Features:</span> Wireless, Customizable Buttons</p>
+                        <p><span>Color:</span> Black</p>
+                    </div>
+                    <div class="gaming-location"><i class="fas fa-map-marker-alt"></i> North Dorms</div>
+                    <p>Elite Series 2 controller with all accessories and original box. Only used for a few months.</p>
+                    <div class="gaming-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Daniel P.</div>
+                    </div>
+                    <div class="gaming-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gaming Item 6 -->
+            <div class="gaming-card">
+                <div class="gaming-image">
+                    <img src="https://images.unsplash.com/photo-1626240130051-68871c71de47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Gaming Monitor">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gaming-details">
+                    <h3 class="gaming-title">27" Gaming Monitor - 144Hz</h3>
+                    <div class="gaming-meta">
+                        <div class="gaming-price">$180.00</div>
+                        <div class="gaming-condition">Good</div>
+                    </div>
+                    <div class="gaming-info">
+                        <p><span>Type:</span> Monitor</p>
+                        <p><span>Resolution:</span> 1080p</p>
+                        <p><span>Refresh Rate:</span> 144Hz</p>
+                        <p><span>Connections:</span> HDMI, DisplayPort, USB</p>
+                    </div>
+                    <div class="gaming-location"><i class="fas fa-map-marker-alt"></i> Computer Science Building</div>
+                    <p>MSI Optix G27 gaming monitor. Great for competitive gaming with 1ms response time.</p>
+                    <div class="gaming-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Leila H.</div>
+                    </div>
+                    <div class="gaming-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gaming Item 7 -->
+            <div class="gaming-card">
+                <div class="special-badge">Bundle</div>
+                <div class="gaming-image">
+                    <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="PS4 Games Bundle">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gaming-details">
+                    <h3 class="gaming-title">PS4 Games Bundle (5 Games)</h3>
+                    <div class="gaming-meta">
+                        <div class="gaming-price">$90.00</div>
+                        <div class="gaming-condition">Good</div>
+                    </div>
+                    <div class="gaming-info">
+                        <p><span>Type:</span> Games</p>
+                        <p><span>Platform:</span> PlayStation 4</p>
+                        <p><span>Titles:</span> God of War, Spider-Man, Horizon Zero Dawn, The Last of Us 2, Ghost of Tsushima</p>
+                        <p><span>Genre:</span> Action/Adventure</p>
+                    </div>
+                    <div class="gaming-location"><i class="fas fa-map-marker-alt"></i> South Campus</div>
+                    <p>Collection of PS4 exclusives. All discs in good condition with original cases. Selling as a bundle only.</p>
+                    <div class="gaming-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Marcus W.</div>
+                    </div>
+                    <div class="gaming-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gaming Item 8 -->
+            <div class="gaming-card">
+                <div class="gaming-image">
+                    <img src="https://images.unsplash.com/photo-1600861194942-f883de0dfe96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Gaming Keyboard">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gaming-details">
+                    <h3 class="gaming-title">Mechanical Gaming Keyboard - RGB</h3>
+                    <div class="gaming-meta">
+                        <div class="gaming-price">$65.00</div>
+                        <div class="gaming-condition">Like New</div>
+                    </div>
+                    <div class="gaming-info">
+                        <p><span>Type:</span> Keyboard</p>
+                        <p><span>Switches:</span> Cherry MX Brown</p>
+                        <p><span>Features:</span> RGB Lighting, Macro Keys</p>
+                        <p><span>Brand:</span> Corsair K70</p>
+                    </div>
+                    <div class="gaming-location"><i class="fas fa-map-marker-alt"></i> Media Center</div>
+                    <p>Corsair K70 RGB mechanical keyboard. Tactile switches perfect for gaming and typing. Includes wrist rest.</p>
+                    <div class="gaming-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/15.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Nina T.</div>
+                    </div>
+                    <div class="gaming-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pagination -->
+    <section class="container">
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">Next &raquo;</a>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Have Gaming Items to Sell?</h2>
+            <p>Upgrade your setup or clear out unused gaming gear. Connect with fellow gamers on campus who will appreciate your items!</p>
+            <a href="sell.html" class="hero-btn primary-btn">Sell Your Gaming Items</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Campus Marketplace</h3>
+                    <p>The trusted platform for university students to buy and sell used items safely and conveniently.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="textbooks.html">Textbooks</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="furniture.html">Furniture</a></li>
+                        <li><a href="clothing.html">Clothing</a></li>
+                        <li><a href="bicycles.html">Bicycles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="safety.html">Safety Tips</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Campus Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="gaming.js"></script>
+</body>
+</html>

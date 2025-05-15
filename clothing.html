@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing - Thanh Lý Sinh Viên</title>
+    <link rel="icon" type="Logo_07/png" href="Logo_07.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="clothing.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Logo_04.png" alt="Campus Marketplace Logo">
+                <h1>Thanh Lý Sinh Viên</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for clothing...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="categories.html"><i class="fas fa-th-large"></i> Categories</a>
+                <a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="account.html"><i class="fas fa-user"></i> Account</a>
+                <a href="sell.html" class="btn"><i class="fas fa-plus"></i> Sell Item</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Clothing</h2>
+            <p>Find affordable clothing, accessories, and footwear from fellow students.</p>
+        </div>
+    </section>
+    
+    <!-- Filters -->
+    <section class="container">
+        <div class="filters">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="">All Clothing</option>
+                        <option value="tops">Tops & T-shirts</option>
+                        <option value="bottoms">Pants & Shorts</option>
+                        <option value="dresses">Dresses & Skirts</option>
+                        <option value="outerwear">Jackets & Outerwear</option>
+                        <option value="footwear">Shoes & Footwear</option>
+                        <option value="accessories">Accessories</option>
+                        <option value="formal">Formal Wear</option>
+                        <option value="other">Other Clothing</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="condition">Condition</label>
+                    <select id="condition">
+                        <option value="">Any Condition</option>
+                        <option value="new">New with Tags</option>
+                        <option value="like-new">Like New</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="worn">Well Worn</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-min">Price Range</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="number" id="price-min" placeholder="Min">
+                        <input type="number" id="price-max" placeholder="Max">
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="size">Size</label>
+                    <select id="size">
+                        <option value="">All Sizes</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn apply-btn">Apply Filters</button>
+                <button class="filter-btn reset-btn">Reset</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Clothing Grid -->
+    <section class="container">
+        <div class="clothing-grid">
+            <!-- Clothing 1 -->
+            <div class="clothing-card">
+                <div class="clothing-image">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Denim Jacket">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="clothing-details">
+                    <h3 class="clothing-title">Vintage Denim Jacket</h3>
+                    <div class="clothing-meta">
+                        <div class="clothing-price">$35.00</div>
+                        <div class="clothing-condition">Good</div>
+                    </div>
+                    <div class="clothing-info">
+                        <p><span>Type:</span> Outerwear</p>
+                        <p><span>Size:</span> M</p>
+                        <p><span>Brand:</span> Levi's</p>
+                        <p><span>Color:</span> Blue</p>
+                    </div>
+                    <div class="clothing-location"><i class="fas fa-map-marker-alt"></i> Arts Building</div>
+                    <p>Classic denim jacket, slightly distressed. Perfect for layering.</p>
+                    <div class="clothing-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Mia K.</div>
+                    </div>
+                    <div class="clothing-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Clothing 2 -->
+            <div class="clothing-card">
+                <div class="clothing-image">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" alt="Hoodie">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="clothing-details">
+                    <h3 class="clothing-title">University Hoodie</h3>
+                    <div class="clothing-meta">
+                        <div class="clothing-price">$25.00</div>
+                        <div class="clothing-condition">Like New</div>
+                    </div>
+                    <div class="clothing-info">
+                        <p><span>Type:</span> Tops</p>
+                        <p><span>Size:</span> L</p>
+                        <p><span>Brand:</span> Campus Store</p>
+                        <p><span>Color:</span> Gray</p>
+                    </div>
+                    <div class="clothing-location"><i class="fas fa-map-marker-alt"></i> Student Union</div>
+                    <p>Official university hoodie. Worn only a few times, in excellent condition.</p>
+                    <div class="clothing-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Alex T.</div>
+                    </div>
+                    <div class="clothing-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Clothing 3 -->
+            <div class="clothing-card">
+                <div class="clothing-image">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sneakers">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="clothing-details">
+                    <h3 class="clothing-title">Nike Running Shoes</h3>
+                    <div class="clothing-meta">
+                        <div class="clothing-price">$45.00</div>
+                        <div class="clothing-condition">Good</div>
+                    </div>
+                    <div class="clothing-info">
+                        <p><span>Type:</span> Footwear</p>
+                        <p><span>Size:</span> US 9</p>
+                        <p><span>Brand:</span> Nike</p>
+                        <p><span>Color:</span> Red/White</p>
+                    </div>
+                    <div class="clothing-location"><i class="fas fa-map-marker-alt"></i> Recreation Center</div>
+                    <p>Nike running shoes, still have plenty of life left. Minor scuffs on sides.</p>
+                    <div class="clothing-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">James L.</div>
+                    </div>
+                    <div class="clothing-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Clothing 4 -->
+            <div class="clothing-card">
+                <div class="clothing-image">
+                    <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Backpack">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="clothing-details">
+                    <h3 class="clothing-title">North Face Backpack</h3>
+                    <div class="clothing-meta">
+                        <div class="clothing-price">$30.00</div>
+                        <div class="clothing-condition">Good</div>
+                    </div>
+                    <div class="clothing-info">
+                        <p><span>Type:</span> Accessories</p>
+                        <p><span>Brand:</span> The North Face</p>
+                        <p><span>Color:</span> Black</p>
+                        <p><span>Features:</span> Laptop Compartment, Water Bottle Holders</p>
+                    </div>
+                    <div class="clothing-location"><i class="fas fa-map-marker-alt"></i> Library</div>
+                    <p>Sturdy backpack with plenty of compartments. Great for carrying textbooks.</p>
+                    <div class="clothing-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Sophia M.</div>
+                    </div>
+                                        <div class="clothing-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Clothing 5 -->
+            <div class="clothing-card">
+                <div class="clothing-image">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Sundress">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="clothing-details">
+                    <h3 class="clothing-title">Floral Sundress</h3>
+                    <div class="clothing-meta">
+                        <div class="clothing-price">$22.00</div>
+                        <div class="clothing-condition">Like New</div>
+                    </div>
+                    <div class="clothing-info">
+                        <p><span>Type:</span> Dresses</p>
+                        <p><span>Size:</span> S</p>
+                        <p><span>Brand:</span> H&M</p>
+                        <p><span>Color:</span> Blue/Floral</p>
+                    </div>
+                    <div class="clothing-location"><i class="fas fa-map-marker-alt"></i> West Campus</div>
+                    <p>Light summer dress, worn only once for an event. Perfect condition.</p>
+                    <div class="clothing-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Emma R.</div>
+                    </div>
+                    <div class="clothing-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Clothing 6 -->
+            <div class="clothing-card">
+                <div class="clothing-image">
+                    <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1372&q=80" alt="Winter Coat">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="clothing-details">
+                    <h3 class="clothing-title">Winter Parka Coat</h3>
+                    <div class="clothing-meta">
+                        <div class="clothing-price">$60.00</div>
+                        <div class="clothing-condition">Good</div>
+                    </div>
+                    <div class="clothing-info">
+                        <p><span>Type:</span> Outerwear</p>
+                        <p><span>Size:</span> M</p>
+                        <p><span>Brand:</span> Columbia</p>
+                        <p><span>Color:</span> Navy Blue</p>
+                    </div>
+                    <div class="clothing-location"><i class="fas fa-map-marker-alt"></i> North Dorms</div>
+                    <p>Warm winter coat with hood. Water-resistant and insulated. Minor wear on cuffs.</p>
+                    <div class="clothing-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Daniel K.</div>
+                    </div>
+                    <div class="clothing-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pagination -->
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Have Clothing to Sell?</h2>
+            <p>Clean out your closet and make some extra cash by selling your gently used clothing items to other students.</p>
+            <a href="sell.html" class="hero-btn primary-btn">Sell Your Clothing</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Thanh Lý Sinh Viên</h3>
+                    <p>The trusted platform for university students to buy and sell used items safely and conveniently.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="textbooks.html">Textbooks</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="furniture.html">Furniture</a></li>
+                        <li><a href="clothing.html">Clothing</a></li>
+                        <li><a href="bicycles.html">Bicycles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="safety.html">Safety Tips</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Thanh Lý Sinh Viên. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="clothing.js"></script>
+</body>
+</html>

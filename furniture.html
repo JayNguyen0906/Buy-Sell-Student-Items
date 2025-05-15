@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture - Thanh Lý Sinh Viên</title>
+    <link rel="icon" type="Logo_07/png" href="Logo_07.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="furniture.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Logo_04.png" alt="Campus Marketplace Logo">
+                <h1>Thanh Lý Sinh Viên</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for furniture...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="categories.html"><i class="fas fa-th-large"></i> Categories</a>
+                <a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="account.html"><i class="fas fa-user"></i> Account</a>
+                <a href="sell.html" class="btn"><i class="fas fa-plus"></i> Sell Item</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Furniture</h2>
+            <p>Find affordable desks, chairs, shelves, and other furniture for your dorm or apartment.</p>
+        </div>
+    </section>
+    
+    <!-- Filters -->
+    <section class="container">
+        <div class="filters">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="">All Furniture</option>
+                        <option value="desks">Desks & Tables</option>
+                        <option value="chairs">Chairs & Seating</option>
+                        <option value="storage">Storage & Shelving</option>
+                        <option value="beds">Beds & Mattresses</option>
+                        <option value="sofas">Sofas & Couches</option>
+                        <option value="lamps">Lamps & Lighting</option>
+                        <option value="other">Other Furniture</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="condition">Condition</label>
+                    <select id="condition">
+                        <option value="">Any Condition</option>
+                        <option value="new">New</option>
+                        <option value="like-new">Like New</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="for-parts">For Parts</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-min">Price Range</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="number" id="price-min" placeholder="Min">
+                        <input type="number" id="price-max" placeholder="Max">
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="material">Material</label>
+                    <select id="material">
+                        <option value="">All Materials</option>
+                        <option value="wood">Wood</option>
+                        <option value="metal">Metal</option>
+                        <option value="plastic">Plastic</option>
+                        <option value="fabric">Fabric</option>
+                        <option value="leather">Leather</option>
+                        <option value="glass">Glass</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn apply-btn">Apply Filters</button>
+                <button class="filter-btn reset-btn">Reset</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Furniture Grid -->
+    <section class="container">
+        <div class="furniture-grid">
+            <!-- Furniture 1 -->
+            <div class="furniture-card">
+                <div class="furniture-image">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Compact Sofa">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="furniture-details">
+                    <h3 class="furniture-title">Compact Sofa - Perfect for Dorms</h3>
+                    <div class="furniture-meta">
+                        <div class="furniture-price">$120.00</div>
+                        <div class="furniture-condition">Good</div>
+                    </div>
+                    <div class="furniture-info">
+                        <p><span>Type:</span> Sofa</p>
+                        <p><span>Material:</span> Fabric</p>
+                        <p><span>Color:</span> Gray</p>
+                        <p><span>Dimensions:</span> 60" x 30" x 32"</p>
+                    </div>
+                    <div class="furniture-location"><i class="fas fa-map-marker-alt"></i> West Campus Apartments</div>
+                    <p>Comfortable 2-seater sofa. Moving out and need to sell quickly.</p>
+                    <div class="furniture-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Emma L.</div>
+                    </div>
+                    <div class="furniture-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Furniture 2 -->
+            <div class="furniture-card">
+                <div class="furniture-image">
+                    <img src="https://images.unsplash.com/photo-1506898667547-42e22a46e125?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Study Desk">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="furniture-details">
+                    <h3 class="furniture-title">IKEA Study Desk with Drawers</h3>
+                    <div class="furniture-meta">
+                        <div class="furniture-price">$75.00</div>
+                        <div class="furniture-condition">Like New</div>
+                    </div>
+                    <div class="furniture-info">
+                        <p><span>Type:</span> Desk</p>
+                        <p><span>Material:</span> Wood</p>
+                        <p><span>Color:</span> White</p>
+                        <p><span>Dimensions:</span> 47" x 23" x 29"</p>
+                    </div>
+                    <div class="furniture-location"><i class="fas fa-map-marker-alt"></i> North Dorms</div>
+                    <p>Sturdy desk with 2 drawers. Only used for one semester.</p>
+                    <div class="furniture-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Alex R.</div>
+                    </div>
+                    <div class="furniture-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Furniture 3 -->
+            <div class="furniture-card">
+                <div class="furniture-image">
+                    <img src="https://images.unsplash.com/photo-1519947486511-46149fa0a254?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Bookshelf">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="furniture-details">
+                    <h3 class="furniture-title">5-Tier Bookshelf</h3>
+                    <div class="furniture-meta">
+                        <div class="furniture-price">$40.00</div>
+                        <div class="furniture-condition">Good</div>
+                    </div>
+                    <div class="furniture-info">
+                        <p><span>Type:</span> Bookshelf</p>
+                        <p><span>Material:</span> Wood & Metal</p>
+                        <p><span>Color:</span> Brown/Black</p>
+                        <p><span>Dimensions:</span> 31" x 12" x 70"</p>
+                    </div>
+                    <div class="furniture-location"><i class="fas fa-map-marker-alt"></i> East Campus Housing</div>
+                    <p>Sturdy bookshelf, perfect for textbooks and decor. Easy to assemble.</p>
+                    <div class="furniture-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Tina M.</div>
+                    </div>
+                    <div class="furniture-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Furniture 4 -->
+            <div class="furniture-card">
+                <div class="furniture-image">
+                    <img src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Ergonomic Chair">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="furniture-details">
+                    <h3 class="furniture-title">Ergonomic Office Chair</h3>
+                    <div class="furniture-meta">
+                        <div class="furniture-price">$85.00</div>
+                        <div class="furniture-condition">Excellent</div>
+                    </div>
+                    <div class="furniture-info">
+                        <p><span>Type:</span> Chair</p>
+                        <p><span>Material:</span> Mesh & Plastic</p>
+                        <p><span>Color:</span> Black</p>
+                        <p><span>Features:</span> Adjustable Height, Lumbar Support</p>
+                    </div>
+                    <div class="furniture-location"><i class="fas fa-map-marker-alt"></i> Computer Science Building</div>
+                    <p>Great for long study sessions. Adjustable height and lumbar support.</p>
+                    <div class="furniture-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">David P.</div>
+                    </div>
+                    <div class="furniture-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Furniture 5 -->
+            <div class="furniture-card">
+                <div class="furniture-image">
+                    <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Bedside Table">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="furniture-details">
+                    <h3 class="furniture-title">Bedside Table with Drawer</h3>
+                    <div class="furniture-meta">
+                        <div class="furniture-price">$25.00</div>
+                        <div class="furniture-condition">Good</div>
+                    </div>
+                    <div class="furniture-info">
+                        <p><span>Type:</span> Nightstand</p>
+                        <p><span>Material:</span> Wood</p>
+                        <p><span>Color:</span> Oak</p>
+                        <p><span>Dimensions:</span> 16" x 16" x 24"</p>
+                    </div>
+                    <div class="furniture-location"><i class="fas fa-map-marker-alt"></i> South Residence Hall</div>
+                    <p>Compact nightstand with one drawer and open shelf. Perfect for small spaces.</p>
+                    <div class="furniture-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Sophia M.</div>
+                    </div>
+                    <div class="furniture-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Furniture 6 -->
+            <div class="furniture-card">
+                <div class="furniture-image">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Floor Lamp">
+                    <div class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="furniture-details">
+                    <h3 class="furniture-title">Modern Floor Lamp</h3>
+                    <div class="furniture-meta">
+                        <div class="furniture-price">$35.00</div>
+                        <div class="furniture-condition">Good</div>
+                    </div>
+                    <div class="furniture-info">
+                        <p><span>Type:</span> Lighting</p>
+                        <p><span>Material:</span> Metal</p>
+                        <p><span>Color:</span> Black</p>
+                        <p><span>Height:</span> 5'6"</p>
+                    </div>
+                    <div class="furniture-location"><i class="fas fa-map-marker-alt"></i> Arts Building</div>
+                    <p>Adjustable reading lamp with warm light. Works perfectly.</p>
+                    <div class="furniture-seller">
+                        <div class="seller-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Seller Avatar">
+                        </div>
+                        <div class="seller-name">Ryan K.</div>
+                    </div>
+                    <div class="furniture-actions">
+                        <a href="#" class="action-btn view-btn">View Details</a>
+                        <a href="#" class="action-btn contact-btn">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pagination -->
+    <section class="container">
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">Next &raquo;</a>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Have Furniture to Sell?</h2>
+            <p>Turn your unused furniture into cash and help fellow students furnish their spaces affordably.</p>
+            <a href="sell.html" class="hero-btn primary-btn">Sell Your Furniture</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Campus Marketplace</h3>
+                    <p>The trusted platform for university students to buy and sell used items safely and conveniently.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="sell.html">Sell an Item</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="textbooks.html">Textbooks</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="furniture.html">Furniture</a></li>
+                        <li><a href="clothing.html">Clothing</a></li>
+                        <li><a href="bicycles.html">Bicycles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="safety.html">Safety Tips</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Campus Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="furniture.js"></script>
+</body>
+</html>
